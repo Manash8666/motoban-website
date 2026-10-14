@@ -2,7 +2,17 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
+    let body: any = {};
+    try {
+      body = await req.json();
+    } catch {
+      try {
+        const text = await req.text();
+        body = text ? JSON.parse(text) : {};
+      } catch {
+        body = {};
+      }
+    }
     const {
       workshopName,
       ownerName,
@@ -11,7 +21,7 @@ export async function POST(req: NextRequest) {
       workshopType = "Two-Wheeler",
       dailyVehicles = 15,
       selectedPlan = "Garage Pro",
-    } = body;
+    } = body || {};
 
     // Basic Validation
     if (!workshopName || !phone) {
@@ -59,12 +69,12 @@ export async function POST(req: NextRequest) {
       data: leadPayload,
       waRedirectUrl,
     });
-  } catch (err: unknown) {
+  } catch (err: any) {
     console.error("Lead submission error:", err);
     return NextResponse.json(
       {
         success: false,
-        error: "Internal server error processing lead.",
+        error: err?.message || "Internal server error processing lead.",
       },
       { status: 500 }
     );
