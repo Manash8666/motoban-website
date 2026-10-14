@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Check, Sparkles, HelpCircle, ChevronDown, ChevronUp, Calculator, ArrowRight, ShieldCheck, Phone } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
+import GarageProfitCalculator from "@/components/pricing/GarageProfitCalculator";
 
 const comparisonFeatures = [
   { name: "Monthly Active Job Cards", starter: "50 / mo", pro: "Unlimited", enterprise: "Unlimited Multi-Branch" },
@@ -92,6 +93,20 @@ export default function PricingPage() {
         <p className="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base leading-relaxed">
           Choose a monthly subscription, discounted annual billing, or lock in a lifetime license. No hidden fees or hardware lock-in.
         </p>
+
+        {/* GEO / AEO Quick Answer Box */}
+        <aside
+          aria-label="Quick Answer Summary"
+          className="max-w-4xl mx-auto mt-8 p-5 rounded-2xl bg-[#1C263D]/80 border border-[#C9F31D]/40 text-left"
+        >
+          <div className="flex items-center space-x-2 text-xs font-mono font-bold uppercase text-[#C9F31D] mb-1.5">
+            <Sparkles className="w-4 h-4 text-[#C9F31D]" />
+            <span>TL;DR — Quick Pricing Summary for Garages</span>
+          </div>
+          <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <strong>MotoBan (MechBillerAI)</strong> offers transparent pricing with zero hardware lock-in: a <strong>Free Starter Tier</strong> for single-bay testing, a <strong>₹999/month</strong> (or ₹7,999/year) <strong>Garage Pro</strong> plan with unlimited job cards, 15-second AI voice billing, and 50,000+ BS6 spares, or a <strong>₹14,999 one-time Lifetime License</strong> with perpetual offline PWA access and zero recurring fees.
+          </p>
+        </aside>
 
         {/* Toggle */}
         <div className="mt-8 inline-flex p-1.5 rounded-full bg-[#151D2F] border border-white/10">
@@ -253,112 +268,8 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* INTERACTIVE GARAGE ROI CALCULATOR */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
-        <div className="p-8 sm:p-12 rounded-3xl bg-[#151D2F] border border-white/10 shadow-2xl relative overflow-hidden">
-          <div className="max-w-3xl mb-8">
-            <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-[#C9F31D] mb-2">
-              <Calculator className="w-4 h-4" />
-              <span>Interactive ROI Calculator</span>
-            </div>
-            <h2 className="font-syne font-black text-3xl sm:text-4xl uppercase tracking-tight text-white mb-2">
-              See How Much Revenue You Recover
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-300">
-              In most garages, 15-20% of small consumables (oil top-ups, washers, spray lube, small bolts) are forgotten during manual paper billing.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* Sliders (7 cols) */}
-            <div className="lg:col-span-7 space-y-6">
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-xs font-syne uppercase tracking-wider text-slate-300">
-                    Vehicles Serviced Per Day:
-                  </span>
-                  <span className="font-mono text-lg font-bold text-[#C9F31D]">
-                    {bikesPerDay} Bikes / Day
-                  </span>
-                </div>
-                <input
-                  type="range"
-                  min="5"
-                  max="100"
-                  step="5"
-                  value={bikesPerDay}
-                  onChange={(e) => setBikesPerDay(Number(e.target.value))}
-                  className="w-full accent-[#C9F31D] h-2 bg-[#0B0F19] rounded-lg cursor-pointer"
-                />
-                <div className="flex justify-between text-[10px] font-mono text-slate-400 mt-1">
-                  <span>5 bikes (small garage)</span>
-                  <span>50 bikes (busy workshop)</span>
-                  <span>100+ bikes (service center)</span>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-xs font-syne uppercase tracking-wider text-slate-300">
-                    Avg. Unbilled Consumables Saved Per Job:
-                  </span>
-                  <span className="font-mono text-lg font-bold text-[#FF5E14]">
-                    ₹{leakagePerBike} / Job
-                  </span>
-                </div>
-                <input
-                  type="range"
-                  min="30"
-                  max="300"
-                  step="10"
-                  value={leakagePerBike}
-                  onChange={(e) => setLeakagePerBike(Number(e.target.value))}
-                  className="w-full accent-[#FF5E14] h-2 bg-[#0B0F19] rounded-lg cursor-pointer"
-                />
-                <div className="flex justify-between text-[10px] font-mono text-slate-400 mt-1">
-                  <span>₹30 (small bolts/washer)</span>
-                  <span>₹120 (chain spray + oil topup)</span>
-                  <span>₹300 (full consumables)</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Calculations Card (5 cols) */}
-            <div className="lg:col-span-5 bg-[#0B0F19] p-6 rounded-2xl border border-white/10 space-y-4">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-slate-400 block">
-                Estimated Monthly Revenue Recovered
-              </span>
-              <div className="font-syne font-black text-4xl text-[#C9F31D]">
-                ₹{monthlyRecovered.toLocaleString("en-IN")}
-                <span className="text-xs font-mono font-normal text-slate-400"> / month</span>
-              </div>
-              <div className="text-xs text-slate-300 space-y-1 font-mono pt-3 border-t border-white/10">
-                <div className="flex justify-between">
-                  <span>Annual Recovered:</span>
-                  <span className="text-white font-bold">₹{annualRecovered.toLocaleString("en-IN")}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Software Cost (Garage Pro):</span>
-                  <span className="text-slate-400">₹{softwareCostAnnual.toLocaleString("en-IN")}</span>
-                </div>
-                <div className="flex justify-between text-[#10B981] font-bold pt-1 border-t border-white/10 text-sm">
-                  <span>Return On Investment:</span>
-                  <span>{netRoiRatio}x ROI</span>
-                </div>
-              </div>
-
-              <a
-                href={SITE_CONFIG.demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full py-3 rounded-xl bg-[#C9F31D] text-[#0B0F19] font-syne font-bold text-xs uppercase tracking-wider text-center shadow-lime-glow hover:bg-white transition-colors"
-              >
-                Start Recovering Lost Revenue
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* VIRAL PRODUCT-LED GROWTH: GARAGE REVENUE LEAKAGE CALCULATOR */}
+      <GarageProfitCalculator />
 
       {/* 20-ROW FEATURE COMPARISON TABLE */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">

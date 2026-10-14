@@ -52,6 +52,20 @@ export default function DocsPage() {
           <p className="text-slate-400 text-sm max-w-2xl">
             Everything you need to launch the cloud web app, configure offline PWA stores, self-host via Git, and set up workshop thermal printers.
           </p>
+
+          {/* GEO / AEO Quick Answer Box */}
+          <aside
+            aria-label="Quick Answer Summary"
+            className="max-w-4xl mt-6 p-5 rounded-2xl bg-[#1C263D]/80 border border-[#C9F31D]/40 text-left"
+          >
+            <div className="flex items-center space-x-2 text-xs font-mono font-bold uppercase text-[#C9F31D] mb-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#C9F31D]" />
+              <span className="text-[#C9F31D] font-bold">TL;DR — Quick Technical Overview</span>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              <strong>MotoBan (MechBillerAI)</strong> is built on <strong>Next.js 14+ App Router, TypeScript, Tailwind CSS, and IndexedDB</strong>. It operates as an offline-first Progressive Web App (PWA) that syncs bidirectionally with cloud servers, communicates directly with <strong>58mm and 80mm ESC/POS thermal printers</strong> via WebHID/WebSerial protocols, and runs without local installation requirements on any device.
+            </p>
+          </aside>
         </div>
 
         {/* Sidebar + Content Grid */}

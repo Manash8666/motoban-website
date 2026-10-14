@@ -4,6 +4,7 @@ import PlatformEcosystem from "@/components/home/PlatformEcosystem";
 import ParallaxDivider from "@/components/home/ParallaxDivider";
 import CapabilitiesGrid from "@/components/home/CapabilitiesGrid";
 import AppShowcase from "@/components/home/AppShowcase";
+import InteractiveBillGenerator from "@/components/home/InteractiveBillGenerator";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import PricingSection from "@/components/home/PricingSection";
 import HorizontalScrollContainer from "@/components/home/HorizontalScrollContainer";
@@ -30,7 +31,10 @@ export default function HomePage() {
       {/* 6. Asymmetrical Interactive App Showcase */}
       <AppShowcase />
 
-      {/* 7. Garage Owner Testimonials Carousel */}
+      {/* 7. Viral PLG: Live 15-Second WhatsApp Bill & Job Card Generator */}
+      <InteractiveBillGenerator />
+
+      {/* 8. Garage Owner Testimonials Carousel */}
       <TestimonialsSection />
 
       {/* 8. 3-Tier Interactive Pricing */}

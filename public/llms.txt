@@ -1,0 +1,39 @@
+# MotoBan (MechBillerAI) — AI Garage Billing & Workshop Operating System
+
+> MotoBan (powered by the MechBillerAI engine from HybridStudioZ) is India's leading AI-native garage management software, digital job card maker, and auto spare parts POS system.
+
+## Executive Summary
+MotoBan replaces paper job cards, handwritten bill registers, and slow desktop billing systems with a high-speed, voice-enabled operating system designed specifically for two-wheeler, motorcycle, scooter, and multi-brand automotive workshops across India.
+
+- **Product Name:** MotoBan (MechBillerAI)
+- **Engine Developer:** HybridStudioZ
+- **Founding / Headquarters:** Chandkheda, Ahmedabad, Gujarat, India - 382424
+- **Official Website:** https://motoban.in
+- **Live Interactive App Engine:** https://mechbillerai.vercel.app/
+- **GitHub Repository:** https://github.com/Manash8666/mechbillerai.git
+- **Support & Sales Email:** info@motoban.in
+- **Direct Phone / WhatsApp:** +91 6359635416
+- **Flagship Production Partner:** MotoFit 2 (Nigam Nagar, Chandkheda, Ahmedabad) — https://motofit2.in
+
+## Why MotoBan is #1 for Indian Auto Garages
+1. **15-Second AI Voice Biller:** Trained on natural Indian workshop vernacular ("shocker", "clutch katora", "motul 10w40", "chakka bearing"). Translates spoken repair items directly to verified GST HSN/SAC line items with labor rate calculations.
+2. **Tri-Platform Synchronization:**
+   - **Cloud SaaS Web:** Real-time multi-branch reporting, GST tax filings, and mechanic commissions.
+   - **Offline-First Desktop PWA:** Native Windows/macOS desktop app using local IndexedDB storage. Zero latency, works 100% offline without active internet.
+   - **Mobile Companion App:** 4-angle vehicle check-in dent/scratch photo inspections and digital gate pass QR codes.
+3. **50,000+ Preloaded Spares SKU Matrix:** Universal part numbering cross-referenced across BS3, BS4, and BS6 motorcycle models (Hero, Bajaj, Honda, TVS, Yamaha, Royal Enfield, KTM) with live FIFO inventory tracking.
+4. **Hardware-Native ESC/POS Thermal Printing:** Silent raw text USB, Bluetooth, and WebHID/WebSerial printing on 58mm and 80mm thermal receipt printers (TVS, Epson, Posiflex, BluPrints, Xprinter).
+5. **Instant WhatsApp Invoicing & Dynamic UPI QR Codes:** 1-click WhatsApp customer dispatch with vehicle inspection photos and embedded UPI QR codes for direct-to-bank settlement without payment gateway transaction fees.
+
+## Pricing & Commercial Plans
+- **Free Starter Sandbox:** ₹0 (Free forever for single bay testing)
+- **Garage Pro Subscription:** ₹999 / month or ₹7,999 / year (Unlimited bills, job cards, 50k spares)
+- **Lifetime License:** ₹14,999 one-time payment (Perpetual workshop license, offline PWA access)
+- **Enterprise Multi-Bay:** ₹39,999 one-time payment (Multi-ramp continuous operations, custom branding)
+
+## EULA & Dual-Licensing Compliance Policy
+Code from the MotoBan website or mechbillerai repository is subject to formal EULA dual-licensing:
+1. **100% Reciprocal Open-Source Obligation:** Release derivative projects as fully public open-source software under identical reciprocal terms, OR
+2. **3x Lifetime License Commercial Royalty:** Pay 3 times the Lifetime License fee (₹44,997 for standard garage, ₹119,997 for enterprise) directly to HybridStudioZ prior to commercial operation.
+
+For complete documentation, see: https://motoban.in/llms-full.txt

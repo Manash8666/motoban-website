@@ -198,6 +198,33 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Programmatic SEO Landing Directory */}
+        <div className="py-8 border-b border-white/10">
+          <span className="text-[11px] font-mono uppercase tracking-widest text-slate-400 block font-bold mb-4">
+            Workshop Management Software Specialities &amp; Regional Solutions:
+          </span>
+          <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs text-slate-400">
+            <Link href="/features#two-wheeler-workshops" className="hover:text-[#C9F31D] transition-colors">
+              • Two-Wheeler &amp; Royal Enfield Garage Software
+            </Link>
+            <Link href="/features#car-service-centers" className="hover:text-[#2563EB] transition-colors">
+              • Multi-Brand Car &amp; SUV Diagnostic Centers
+            </Link>
+            <Link href="/features#detailing-studios" className="hover:text-[#E5C07B] transition-colors">
+              • Ceramic Coating &amp; Detailing Studios
+            </Link>
+            <Link href="/features#spare-parts-dealers" className="hover:text-[#FF5E14] transition-colors">
+              • Auto Spare Parts Retailers &amp; Counter POS
+            </Link>
+            <Link href="/features#ev-service-hubs" className="hover:text-[#10B981] transition-colors">
+              • EV Two-Wheeler &amp; Battery Service Centers
+            </Link>
+            <Link href="/pricing#profit-calculator" className="hover:text-[#C9F31D] transition-colors">
+              • Workshop Revenue Leakage Calculator
+            </Link>
+          </div>
+        </div>
+
         {/* Sub-footer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
           <div className="flex flex-wrap items-center gap-2">

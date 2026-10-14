@@ -7,32 +7,86 @@ import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import TelemetryBeacon from "@/components/analytics/TelemetryBeacon";
+import JsonLdSchema from "@/components/seo/JsonLdSchema";
+import ViralFloatingBar from "@/components/layout/ViralFloatingBar";
 
 export const metadata: Metadata = {
-  title: "MotoBan — AI-Powered Garage Billing, Job Cards & Spares Matrix",
+  metadataBase: new URL("https://motoban.in"),
+  title: {
+    default: "MotoBan — #1 AI Garage Billing, Job Card & Spares POS App India",
+    template: "%s | MotoBan — #1 AI Garage Billing, Job Card & Spares POS App",
+  },
   description:
-    "Next-generation workshop operating system powered by HybridStudioZ. 15-second AI voice GST billing, digital job cards, 50,000+ BS3/BS4/BS6 spares matrix, and 100% offline-first PWA resilience.",
+    "India's #1 AI-powered motorcycle & auto garage billing software. 15-second voice GST billing, digital job cards, 50,000+ BS3/BS4/BS6 spares matrix, 100% offline PWA, and instant WhatsApp invoices with UPI QR codes.",
+  applicationName: "MotoBan (MechBillerAI)",
+  authors: [{ name: "HybridStudioZ Engineering Team", url: "https://motoban.in" }],
+  generator: "Next.js",
   keywords: [
-    "Garage Billing Software",
-    "Motorcycle Workshop Software",
-    "AI Voice Billing",
-    "Digital Job Card",
-    "HybridStudioZ",
+    "garage billing software India",
+    "two wheeler workshop management app",
+    "motorcycle job card maker",
+    "BS6 spare parts inventory POS",
+    "GST billing app for mechanics",
+    "WhatsApp garage invoice software",
+    "offline auto repair billing software",
     "MotoBan",
+    "MechBillerAI",
+    "HybridStudioZ",
     "MotoFit 2",
-    "Thermal POS Printing",
-    "Offline PWA Garage",
-    "Automotive Spares Inventory",
+    "bike repair estimate maker",
+    "thermal receipt printer app for garage",
+    "mechanic job card app",
+    "two wheeler garage billing software",
+    "car service invoice generator",
   ],
-  authors: [{ name: "MotoBan Engineering Team" }],
+  creator: "HybridStudioZ",
+  publisher: "HybridStudioZ",
+  alternates: {
+    canonical: "https://motoban.in",
+    languages: {
+      "en-IN": "https://motoban.in",
+    },
+  },
   openGraph: {
-    title: "MotoBan — AI-Powered Garage Billing & Workshop OS",
+    title: "MotoBan — #1 AI Garage Billing, Job Card & Spares POS App",
     description:
-      "Generate GST invoices in 15 seconds with voice. Works 100% offline on desktop & mobile.",
-    url: "https://mechbillerai.vercel.app/",
+      "Generate GST invoices in 15 seconds with voice. Works 100% offline on desktop & mobile with 50,000+ preloaded BS6 spare parts.",
+    url: "https://motoban.in",
     siteName: "MotoBan",
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "MotoBan — AI Garage Billing & Spares POS App",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MotoBan — #1 AI Garage Billing & Workshop OS",
+    description:
+      "15-second AI voice billing, digital job cards, 50,000+ spares matrix, and 100% offline PWA for Indian garages.",
+    images: ["/opengraph-image"],
+    creator: "@HybridStudioZ",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
@@ -43,8 +97,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <JsonLdSchema />
+      </head>
       <body className="bg-[#0B0F19] text-[#E2E8F0] antialiased selection:bg-[#C9F31D] selection:text-[#0B0F19]">
         <TelemetryBeacon source="motoban-website" />
+        <ViralFloatingBar />
         <SmoothScrollProvider>
           <Preloader />
           <CustomCursor />

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="mbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9F31D" />
+      <stop offset="100%" stop-color="#FF5E14" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0B0F19" />
+    </linearGradient>
+  </defs>
+  <!-- Background with subtle border -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="#C9F31D" stroke-opacity="0.3" stroke-width="8" />
+
+  <!-- Stylized Geometric "M" + Speed / Turbo Motif -->
+  <path d="M 120 380 L 120 160 L 220 280 L 256 320 L 292 280 L 392 160 L 392 380" 
+        fill="none" 
+        stroke="url(#mbGrad)" 
+        stroke-width="52" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Speed Dash / Spark accent -->
+  <circle cx="256" cy="170" r="26" fill="#C9F31D" />
+  <path d="M 230 170 L 282 170" stroke="#0B0F19" stroke-width="8" stroke-linecap="round" />
+</svg>

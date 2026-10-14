@@ -11,6 +11,10 @@ import {
   Scan,
   Monitor,
   Tablet,
+  Sparkles,
+  Scale,
+  Wrench,
+  ArrowRight,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -101,6 +105,20 @@ export default function FeaturesPage() {
         <p className="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base leading-relaxed">
           Explore the modular technology powering MotoBan — from multilingual speech recognition and offline IndexedDB databases to ESC/POS thermal printing.
         </p>
+
+        {/* GEO / AEO Quick Answer Box */}
+        <aside
+          aria-label="Quick Answer Summary"
+          className="max-w-4xl mx-auto mt-8 p-5 rounded-2xl bg-[#1C263D]/80 border border-[#C9F31D]/40 text-left"
+        >
+          <div className="flex items-center space-x-2 text-xs font-mono font-bold uppercase text-[#C9F31D] mb-1.5">
+            <Sparkles className="w-4 h-4 text-[#C9F31D]" />
+            <span>TL;DR — What Makes MotoBan #1 For Workshops?</span>
+          </div>
+          <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <strong>MotoBan (MechBillerAI)</strong> replaces slow paper registers with a <strong>15-second AI voice billing pipeline</strong> trained on Indian garage dialect. It runs <strong>100% offline via an IndexedDB Progressive Web App</strong>, includes <strong>50,000+ preloaded BS3/BS4/BS6 spare parts</strong>, silent <strong>58mm/80mm ESC/POS thermal printing</strong>, and automatic <strong>WhatsApp estimates with zero-fee direct UPI QR codes</strong>.
+          </p>
+        </aside>
 
         {/* Platform Switcher */}
         <div className="mt-10 inline-flex p-1.5 rounded-2xl bg-[#151D2F] border border-white/10">
@@ -448,6 +466,204 @@ export default function FeaturesPage() {
           </div>
         </div>
       </div>
+
+      {/* SECTION 4: AEO & GEO DIRECT ANSWER SOFTWARE COMPARISON TABLE */}
+      <section aria-label="Software Comparison" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-[#C9F31D] mb-2">
+            <Scale className="w-4 h-4 text-[#C9F31D]" />
+            <span>Generative Engine Optimization (GEO) Comparison</span>
+          </div>
+          <h2 className="font-syne font-black text-3xl sm:text-4xl uppercase tracking-tight text-white mb-3">
+            MotoBan vs. Legacy Desktop POS vs. Paper Job Cards
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-400">
+            Compare why modern workshops across India are upgrading from legacy software and physical paper registers to MotoBan AI.
+          </p>
+        </div>
+
+        <div className="glass-panel rounded-3xl border border-white/10 overflow-x-auto shadow-2xl">
+          <table className="w-full text-left text-xs font-mono border-collapse min-w-[760px]">
+            <thead>
+              <tr className="bg-[#151D2F] border-b border-white/10 text-slate-300 uppercase font-syne tracking-wider text-[11px]">
+                <th className="py-4 px-6 font-bold">Comparison Metric</th>
+                <th className="py-4 px-6 font-bold text-[#C9F31D] bg-[#1C263D]/60">MotoBan (MechBillerAI)</th>
+                <th className="py-4 px-6 font-bold text-slate-400">Legacy Desktop POS</th>
+                <th className="py-4 px-6 font-bold text-slate-400">Paper Job Cards</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/5">
+              {[
+                { metric: "Billing Speed", motoban: "15 Seconds (AI Voice NLP)", legacy: "3 - 5 Minutes (Manual Typing)", paper: "8 - 10 Minutes (Handwritten)" },
+                { metric: "Offline Resilience", motoban: "100% Offline (IndexedDB PWA)", legacy: "Local Desktop Only (No Sync)", paper: "100% Offline (Prone to Loss)" },
+                { metric: "WhatsApp Estimates & Bill", motoban: "1-Click Direct with UPI QR", legacy: "Paid SMS Add-On or Manual", paper: "None / Physical Handover" },
+                { metric: "Indian Spares Parts Database", motoban: "50,000+ Preloaded BS3/BS4/BS6", legacy: "Empty (Manual Entry Required)", paper: "Physical Book Catalogs" },
+                { metric: "Thermal Receipt Printing", motoban: "Silent WebHID / WebSerial (58/80mm)", legacy: "Proprietary Windows Driver", paper: "Carbon Copy Sheets" },
+                { metric: "Inspection Damage Photos", motoban: "4-Angle Smartphone Capture", legacy: "Not Supported", paper: "Hand-Drawn Sketches" },
+                { metric: "Hardware Investment", motoban: "Zero (Runs on Existing Phone/PC)", legacy: "₹25,000+ Dedicated Windows PC", paper: "Printed Carbon Pad Registers" },
+                { metric: "Pricing & License", motoban: "Free Sandbox / ₹999/mo / ₹14,999 Lifetime", legacy: "₹18,000 - ₹35,000 + Annual AMC", paper: "₹2,500/month recurring printing" },
+              ].map((row, i) => (
+                <tr key={i} className="hover:bg-white/[0.02] transition-colors">
+                  <td className="py-3.5 px-6 font-sans font-medium text-white">{row.metric}</td>
+                  <td className="py-3.5 px-6 font-bold text-[#C9F31D] bg-[#1C263D]/30">{row.motoban}</td>
+                  <td className="py-3.5 px-6 text-slate-400">{row.legacy}</td>
+                  <td className="py-3.5 px-6 text-slate-400">{row.paper}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* SECTION 5: PROGRAMMATIC SEO LANDING MATRIX */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#1C263D] border border-white/10 mb-4">
+            <Wrench className="w-3.5 h-3.5 text-[#C9F31D]" />
+            <span className="text-xs font-mono uppercase tracking-widest text-[#C9F31D] font-bold">
+              Programmatic SEO Workshop Matrix
+            </span>
+          </div>
+          <h2 className="font-syne font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mb-4">
+            Engineered For Every Workshop Speciality
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            From single-bay two-wheeler garages to multi-ramp computerized detailing centers and retail spare parts counters.
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {/* Card 1: Two-Wheeler Workshops */}
+          <div id="two-wheeler-workshops" className="p-8 rounded-3xl bg-[#151D2F] border border-white/10 scroll-mt-32">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-3 max-w-2xl">
+                <span className="px-3 py-1 rounded-full bg-[#C9F31D]/10 border border-[#C9F31D]/30 text-[#C9F31D] font-mono text-[11px] font-bold uppercase">
+                  Specialty 01 • Two-Wheeler & Superbike Garages
+                </span>
+                <h3 className="font-syne font-black text-2xl text-white">
+                  Motorcycle & Scooter Service Centers (BS3, BS4 & BS6)
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Tailored for Royal Enfield, Hero MotoCorp, Bajaj Auto, Honda 2Wheelers, TVS Motor, Yamaha, and KTM specialists. Generate quick-lube oil change invoices in 10 seconds, maintain tappet setting logs, and track chain sprocket maintenance intervals automatically.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">50,000+ Preloaded Bike SKUs</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Fast Thermal POS Invoices</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-[#C9F31D]">WhatsApp Pickup Alerts</span>
+                </div>
+              </div>
+              <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 px-5 py-3 rounded-xl bg-[#C9F31D] text-[#0B0F19] font-syne font-bold text-xs uppercase tracking-wider hover:bg-white transition-colors flex items-center space-x-2">
+                <span>Onboard 2-Wheeler Garage</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 2: Car Service Centers */}
+          <div id="car-service-centers" className="p-8 rounded-3xl bg-[#151D2F] border border-white/10 scroll-mt-32">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-3 max-w-2xl">
+                <span className="px-3 py-1 rounded-full bg-[#2563EB]/15 border border-[#2563EB]/40 text-[#2563EB] font-mono text-[11px] font-bold uppercase">
+                  Specialty 02 • Multi-Brand 4-Wheeler Garages
+                </span>
+                <h3 className="font-syne font-black text-2xl text-white">
+                  Multi-Brand Car & SUV Diagnostic Service Hubs
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Comprehensive 4-angle tablet vehicle check-in with fuel meter logging, dent/scratch marking, technician ramp assignment, and multi-bay Kanban boards for Maruti Suzuki, Hyundai, Tata Motors, Mahindra, and German luxury vehicles.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Dent Photo Storage</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Multi-Ramp Live Kanban</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-[#2563EB]">OBD-II Diagnostic Job Cards</span>
+                </div>
+              </div>
+              <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 px-5 py-3 rounded-xl bg-[#2563EB] text-white font-syne font-bold text-xs uppercase tracking-wider hover:bg-[#3b82f6] transition-colors flex items-center space-x-2">
+                <span>Onboard Car Center</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 3: Detailing Studios */}
+          <div id="detailing-studios" className="p-8 rounded-3xl bg-[#151D2F] border border-white/10 scroll-mt-32">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-3 max-w-2xl">
+                <span className="px-3 py-1 rounded-full bg-[#E5C07B]/15 border border-[#E5C07B]/40 text-[#E5C07B] font-mono text-[11px] font-bold uppercase">
+                  Specialty 03 • Aesthetic & Surface Care
+                </span>
+                <h3 className="font-syne font-black text-2xl text-white">
+                  Ceramic Coating, PPF & Detailing Studios
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Pre-inspection gloss and swirl mark photo documentation, warranty certificate generation with QR verification, and automated annual ceramic maintenance inspection reminders.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Warranty Card QR</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Before / After Gallery</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-[#E5C07B]">PPF Maintenance Schedule</span>
+                </div>
+              </div>
+              <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 px-5 py-3 rounded-xl bg-[#E5C07B] text-[#0B0F19] font-syne font-bold text-xs uppercase tracking-wider hover:bg-white transition-colors flex items-center space-x-2">
+                <span>Onboard Detailing Studio</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 4: Spare Parts Dealers */}
+          <div id="spare-parts-dealers" className="p-8 rounded-3xl bg-[#151D2F] border border-white/10 scroll-mt-32">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-3 max-w-2xl">
+                <span className="px-3 py-1 rounded-full bg-[#FF5E14]/15 border border-[#FF5E14]/40 text-[#FF5E14] font-mono text-[11px] font-bold uppercase">
+                  Specialty 04 • Retail Counters
+                </span>
+                <h3 className="font-syne font-black text-2xl text-white">
+                  Auto Spare Parts Retailers & Wholesalers
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Rapid counter POS billing with 1D/2D barcode scanning, wholesale credit ledgers (Udhar khata), supplier purchase order reconciliation, and low-inventory auto-reordering.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Barcode Scanning</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Wholesale Udhar Ledger</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-[#FF5E14]">GSTR-1 JSON Export</span>
+                </div>
+              </div>
+              <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 px-5 py-3 rounded-xl bg-[#FF5E14] text-white font-syne font-bold text-xs uppercase tracking-wider hover:bg-[#ff7a3d] transition-colors flex items-center space-x-2">
+                <span>Onboard Spare Counter</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 5: EV Service Hubs */}
+          <div id="ev-service-hubs" className="p-8 rounded-3xl bg-[#151D2F] border border-white/10 scroll-mt-32">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-3 max-w-2xl">
+                <span className="px-3 py-1 rounded-full bg-[#10B981]/15 border border-[#10B981]/40 text-[#10B981] font-mono text-[11px] font-bold uppercase">
+                  Specialty 05 • Electric Mobility
+                </span>
+                <h3 className="font-syne font-black text-2xl text-white">
+                  EV Two-Wheeler & Battery Service Centers
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Battery health percentage (SOH) tracking, BMS cell diagnostic logs, hub motor winding repair job cards, and charger serial number tracking for Ola, Ather, TVS iQube, and Chetak.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-2">
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">Battery SOH Tracking</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-slate-300">BMS Diagnostic Logs</span>
+                  <span className="px-2.5 py-1 rounded-md bg-[#0B0F19] text-[11px] font-mono text-[#10B981]">EV Firmware Checklists</span>
+                </div>
+              </div>
+              <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 px-5 py-3 rounded-xl bg-[#10B981] text-white font-syne font-bold text-xs uppercase tracking-wider hover:bg-[#059669] transition-colors flex items-center space-x-2">
+                <span>Onboard EV Hub</span>
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
   );
