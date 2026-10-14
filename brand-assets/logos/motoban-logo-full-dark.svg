@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%" fill="none">
+  <!-- MotoBan Full Brand Identity (Dark Mode Version) -->
+  <defs>
+    <!-- Emblem Gradient -->
+    <linearGradient id="mbDarkBoltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9F31D" />
+      <stop offset="100%" stop-color="#FF5E14" />
+    </linearGradient>
+
+    <!-- Hexagon Border Gradient -->
+    <linearGradient id="mbDarkHexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9F31D" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="mbDarkGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Group: Emblem (Hex Bolt + Lightning) -->
+  <g transform="translate(10, 10)">
+    <!-- Hexagonal Bolt Outer Shield -->
+    <polygon points="50,4 86,25 86,67 50,88 14,67 14,25" 
+             fill="#151D2F" 
+             stroke="url(#mbDarkHexGrad)" 
+             stroke-width="3" 
+             stroke-linejoin="round" />
+    
+    <!-- Inner Dark Core -->
+    <polygon points="50,12 80,29 80,63 50,80 20,63 20,29" 
+             fill="#0B0F19" />
+
+    <!-- High-Voltage Lightning Bolt Symbol -->
+    <path d="M54,16 L34,48 L48,48 L42,76 L66,42 L52,42 Z" 
+          fill="url(#mbDarkBoltGrad)" 
+          filter="url(#mbDarkGlow)" />
+
+    <!-- Mechanical Corner Accents -->
+    <circle cx="50" cy="8" r="2" fill="#C9F31D" />
+    <circle cx="82" cy="27" r="2" fill="#C9F31D" />
+    <circle cx="82" cy="65" r="2" fill="#2563EB" />
+    <circle cx="50" cy="84" r="2" fill="#2563EB" />
+    <circle cx="18" cy="65" r="2" fill="#2563EB" />
+    <circle cx="18" cy="27" r="2" fill="#C9F31D" />
+  </g>
+
+  <!-- Group: Wordmark "MotoBan" -->
+  <g transform="translate(125, 68)">
+    <!-- Primary Wordmark -->
+    <text font-family="'Syne', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+          font-weight="800" 
+          font-size="48" 
+          letter-spacing="-1.5">
+      <tspan fill="#FFFFFF">Moto</tspan><tspan fill="#C9F31D">Ban</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle Tagline & AI Cockpit Badge -->
+  <g transform="translate(127, 94)">
+    <text font-family="'JetBrains Mono', monospace" 
+          font-weight="600" 
+          font-size="11.5" 
+          letter-spacing="3.2" 
+          fill="#94A3B8">
+      AI GARAGE BILLING COCKPIT
+    </text>
+  </g>
+
+  <!-- Speed Pulse Dot -->
+  <circle cx="396" cy="91" r="3" fill="#10B981" />
+  <circle cx="396" cy="91" r="6" fill="#10B981" opacity="0.3" />
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" width="100%" height="100%" fill="none">
+  <!-- Official Embeddable "Powered by MotoBan AI" Badge -->
+  <defs>
+    <linearGradient id="badgeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9F31D" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="badgeBolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9F31D" />
+      <stop offset="100%" stop-color="#FF5E14" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Pill with Frosted Glass -->
+  <rect x="1" y="1" width="258" height="46" rx="23" 
+        fill="#0B0F19" 
+        stroke="url(#badgeBorder)" 
+        stroke-width="1.5" />
+
+  <!-- Mini Bolt Emblem -->
+  <g transform="translate(14, 10)">
+    <polygon points="14,2 24,8 24,20 14,26 4,20 4,8" 
+             fill="#151D2F" 
+             stroke="#C9F31D" 
+             stroke-width="1" />
+    <path d="M15,5 L9,14 L13,14 L11,22 L19,12 L15,12 Z" 
+          fill="url(#badgeBolt)" />
+  </g>
+
+  <!-- Text: "POWERED BY" -->
+  <text x="46" y="22" 
+        font-family="'JetBrains Mono', monospace" 
+        font-size="8.5" 
+        font-weight="600" 
+        letter-spacing="2" 
+        fill="#94A3B8">
+    POWERED BY
+  </text>
+
+  <!-- Text: "MOTOBAN AI" -->
+  <text x="46" y="36" 
+        font-family="'Syne', 'Plus Jakarta Sans', system-ui, sans-serif" 
+        font-size="15" 
+        font-weight="800" 
+        letter-spacing="-0.3">
+    <tspan fill="#FFFFFF">Moto</tspan><tspan fill="#C9F31D">Ban</tspan> <tspan font-size="10" font-weight="700" fill="#2563EB">AI</tspan>
+  </text>
+
+  <!-- Verified Green Dot -->
+  <circle cx="236" cy="24" r="3" fill="#10B981" />
+</svg>

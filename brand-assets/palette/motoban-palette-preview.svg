@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="100%" height="100%" fill="none">
+  <!-- MotoBan Official Visual Color Palette Swatch Sheet -->
+  <defs>
+    <linearGradient id="swatchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1422" />
+      <stop offset="100%" stop-color="#060911" />
+    </linearGradient>
+
+    <!-- Card Shadow -->
+    <filter id="swatchShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Sheet Background -->
+  <rect width="960" height="620" fill="url(#swatchBg)" />
+
+  <!-- Sheet Header -->
+  <g transform="translate(48, 54)">
+    <!-- Small Brand Glyph -->
+    <polygon points="16,2 30,10 30,26 16,34 2,26 2,10" fill="#151D2F" stroke="#C9F31D" stroke-width="1.5" />
+    <path d="M18,5 L10,16 L15,16 L13,26 L22,14 L17,14 Z" fill="#C9F31D" />
+
+    <text x="44" y="24" font-family="'Syne', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">
+      Moto<tspan fill="#C9F31D">Ban</tspan>
+    </text>
+    <text x="160" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#94A3B8">
+      / MASTER COLOR PALETTE SYSTEM v3.0
+    </text>
+    <text x="44" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#64748B">
+      Engineered for extreme workshop environments, high-glare garage bays &amp; ultra-slick dark mode UI.
+    </text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="48" y1="120" x2="912" y2="120" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+  <!-- SECTION 1: PRIMARY BRAND ACCENTS (Row 1) -->
+  <text x="48" y="150" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#94A3B8">
+    01 // PRIMARY BRAND ACCENTS
+  </text>
+
+  <!-- Swatch 1: Geek Lime -->
+  <g transform="translate(48, 168)" filter="url(#swatchShadow)">
+    <rect width="260" height="110" rx="12" fill="#C9F31D" />
+    <!-- Info Overlay -->
+    <rect x="0" y="55" width="260" height="55" rx="0 0 12 12" fill="#0B0F19" />
+    <text x="16" y="36" font-family="'Syne', sans-serif" font-weight="800" font-size="18" fill="#0B0F19">Geek Lime</text>
+    <text x="16" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#FFFFFF">#C9F31D</text>
+    <text x="16" y="96" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#94A3B8">RGB: 201, 243, 29 | Contrast: 14.2:1 (AAA)</text>
+    <!-- Badge -->
+    <rect x="180" y="16" width="66" height="20" rx="10" fill="#0B0F19" />
+    <text x="213" y="30" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#C9F31D" text-anchor="middle">PRIMARY</text>
+  </g>
+
+  <!-- Swatch 2: Garage Flame Orange -->
+  <g transform="translate(348, 168)" filter="url(#swatchShadow)">
+    <rect width="260" height="110" rx="12" fill="#FF5E14" />
+    <rect x="0" y="55" width="260" height="55" rx="0 0 12 12" fill="#0B0F19" />
+    <text x="16" y="36" font-family="'Syne', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF">Flame Orange</text>
+    <text x="16" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#FFFFFF">#FF5E14</text>
+    <text x="16" y="96" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#94A3B8">RGB: 255, 94, 20 | Contrast: 6.2:1 (AA)</text>
+    <rect x="190" y="16" width="56" height="20" rx="10" fill="#0B0F19" />
+    <text x="218" y="30" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#FF5E14" text-anchor="middle">ACTION</text>
+  </g>
+
+  <!-- Swatch 3: Cobalt AI Blue -->
+  <g transform="translate(648, 168)" filter="url(#swatchShadow)">
+    <rect width="264" height="110" rx="12" fill="#2563EB" />
+    <rect x="0" y="55" width="264" height="55" rx="0 0 12 12" fill="#0B0F19" />
+    <text x="16" y="36" font-family="'Syne', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF">Cobalt AI</text>
+    <text x="16" y="78" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#FFFFFF">#2563EB</text>
+    <text x="16" y="96" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#94A3B8">RGB: 37, 99, 235 | Voice Speech-to-GST</text>
+    <rect x="180" y="16" width="68" height="20" rx="10" fill="#0B0F19" />
+    <text x="214" y="30" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38BDF8" text-anchor="middle">AI ENGINE</text>
+  </g>
+
+  <!-- SECTION 2: CANVAS & SURFACES (Row 2) -->
+  <text x="48" y="318" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#94A3B8">
+    02 // CANVAS &amp; ELEVATION SURFACES
+  </text>
+
+  <!-- Swatch 4: Void Black -->
+  <g transform="translate(48, 336)" filter="url(#swatchShadow)">
+    <rect width="260" height="96" rx="12" fill="#0B0F19" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <text x="16" y="30" font-family="'Syne', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">Void Black (Base)</text>
+    <text x="16" y="56" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#C9F31D">#0B0F19</text>
+    <text x="16" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#64748B">Canvas Foundation • Glare-Free</text>
+  </g>
+
+  <!-- Swatch 5: Navy Steel -->
+  <g transform="translate(348, 336)" filter="url(#swatchShadow)">
+    <rect width="260" height="96" rx="12" fill="#151D2F" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <text x="16" y="30" font-family="'Syne', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">Navy Steel (Card)</text>
+    <text x="16" y="56" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#94A3B8">#151D2F</text>
+    <text x="16" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#64748B">POS Terminal Panels &amp; Modals</text>
+  </g>
+
+  <!-- Swatch 6: Glass Border -->
+  <g transform="translate(648, 336)" filter="url(#swatchShadow)">
+    <rect width="264" height="96" rx="12" fill="#1C263D" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <text x="16" y="30" font-family="'Syne', sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">Glass Border</text>
+    <text x="16" y="56" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#94A3B8">#1C263D</text>
+    <text x="16" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#64748B">Container Strokes &amp; Dividers</text>
+  </g>
+
+  <!-- SECTION 3: FUNCTIONAL & METADATA SIGNALS (Row 3) -->
+  <text x="48" y="470" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#94A3B8">
+    03 // SEMANTIC &amp; OPERATIONAL SIGNALS
+  </text>
+
+  <!-- Signal 1: Emerald Sync -->
+  <g transform="translate(48, 488)">
+    <rect width="204" height="74" rx="8" fill="#151D2F" stroke="rgba(16,185,129,0.3)" stroke-width="1" />
+    <circle cx="24" cy="24" r="7" fill="#10B981" />
+    <text x="40" y="28" font-family="'Syne', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">Emerald Sync</text>
+    <text x="40" y="46" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">#10B981</text>
+    <text x="40" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">Paid / Printer Connected</text>
+  </g>
+
+  <!-- Signal 2: Amber Alert -->
+  <g transform="translate(268, 488)">
+    <rect width="204" height="74" rx="8" fill="#151D2F" stroke="rgba(245,158,11,0.3)" stroke-width="1" />
+    <circle cx="24" cy="24" r="7" fill="#F59E0B" />
+    <text x="40" y="28" font-family="'Syne', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">Amber Alert</text>
+    <text x="40" y="46" font-family="'JetBrains Mono', monospace" font-size="11" fill="#F59E0B">#F59E0B</text>
+    <text x="40" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">Due Bills / Low Stock</text>
+  </g>
+
+  <!-- Signal 3: Royal Gold -->
+  <g transform="translate(488, 488)">
+    <rect width="204" height="74" rx="8" fill="#151D2F" stroke="rgba(229,192,123,0.3)" stroke-width="1" />
+    <circle cx="24" cy="24" r="7" fill="#E5C07B" />
+    <text x="40" y="28" font-family="'Syne', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">Royal Gold</text>
+    <text x="40" y="46" font-family="'JetBrains Mono', monospace" font-size="11" fill="#E5C07B">#E5C07B</text>
+    <text x="40" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">₹6,999 Lifetime License</text>
+  </g>
+
+  <!-- Signal 4: Pure White / Typography -->
+  <g transform="translate(708, 488)">
+    <rect width="204" height="74" rx="8" fill="#151D2F" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <circle cx="24" cy="24" r="7" fill="#FFFFFF" />
+    <text x="40" y="28" font-family="'Syne', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF">Frost White</text>
+    <text x="40" y="46" font-family="'JetBrains Mono', monospace" font-size="11" fill="#FFFFFF">#FFFFFF</text>
+    <text x="40" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#94A3B8">High-Contrast Headlines</text>
+  </g>
+
+  <!-- Bottom Sheet Footer -->
+  <text x="480" y="595" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#475569" text-anchor="middle">
+    CONFIDENTIAL &amp; PROPRIETARY — MOTOBAN INC. / HYBRIDSTUDIOZ • TESTED AT MOTOFIT 2 AHMEDABAD
+  </text>
+</svg>

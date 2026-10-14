@@ -1,0 +1,147 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "MotoBan Brand Design Tokens",
+  "version": "3.0.0",
+  "description": "Master Design Tokens for MotoBan (mechbillerai) by HybridStudioZ",
+  "color": {
+    "brand": {
+      "lime": {
+        "value": "#C9F31D",
+        "type": "color",
+        "description": "Primary action, PLG energy driver, hero CTAs, and active billing highlights",
+        "extensions": {
+          "rgb": "201, 243, 29",
+          "hsl": "72, 90%, 53%",
+          "cmyk": "22, 0, 95, 0",
+          "pantone": "PMS 388 C"
+        }
+      },
+      "orange": {
+        "value": "#FF5E14",
+        "type": "color",
+        "description": "High-octane mechanical speed, urgent actions, low stock alerts, and keyboard shortcut tags",
+        "extensions": {
+          "rgb": "255, 94, 20",
+          "hsl": "19, 100%, 54%",
+          "cmyk": "0, 75, 100, 0",
+          "pantone": "PMS 1655 C"
+        }
+      },
+      "cobalt": {
+        "value": "#2563EB",
+        "type": "color",
+        "description": "Voice Speech-to-GST intelligence, background sync, and AI suggestion chips",
+        "extensions": {
+          "rgb": "37, 99, 235",
+          "hsl": "221, 83%, 53%"
+        }
+      },
+      "gold": {
+        "value": "#E5C07B",
+        "type": "color",
+        "description": "Lifetime license tier, VIP garage partner badges, and prestige elements",
+        "extensions": {
+          "rgb": "229, 192, 123",
+          "hsl": "39, 67%, 69%"
+        }
+      }
+    },
+    "canvas": {
+      "void": {
+        "value": "#0B0F19",
+        "type": "color",
+        "description": "Base dark background canvas absorbing garage bay glare",
+        "extensions": {
+          "rgb": "11, 15, 25",
+          "hsl": "223, 39%, 7%"
+        }
+      },
+      "surface": {
+        "value": "#151D2F",
+        "type": "color",
+        "description": "Elevated card surface, billing cockpit panels, and modal containers",
+        "extensions": {
+          "rgb": "21, 29, 47",
+          "hsl": "222, 38%, 13%"
+        }
+      },
+      "border": {
+        "value": "#1C263D",
+        "type": "color",
+        "description": "Subtle container stroke, card dividers, and glassmorphic rims",
+        "extensions": {
+          "rgb": "28, 38, 61",
+          "hsl": "222, 37%, 17%"
+        }
+      }
+    },
+    "semantic": {
+      "success": {
+        "value": "#10B981",
+        "type": "color",
+        "description": "Paid invoices, printer ready status, WhatsApp delivered"
+      },
+      "warning": {
+        "value": "#F59E0B",
+        "type": "color",
+        "description": "Due payments, pending mechanic approvals, low spare alerts"
+      },
+      "danger": {
+        "value": "#EF4444",
+        "type": "color",
+        "description": "Voided bills, hardware disconnected, deletion warnings"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "#FFFFFF",
+        "type": "color",
+        "description": "Primary high-contrast headings, active values, and grand totals"
+      },
+      "secondary": {
+        "value": "#94A3B8",
+        "type": "color",
+        "description": "Body paragraphs, table column headers, and secondary labels"
+      },
+      "muted": {
+        "value": "#64748B",
+        "type": "color",
+        "description": "Timestamps, chassis numbers, thermal receipt captions"
+      }
+    }
+  },
+  "fontFamily": {
+    "display": {
+      "value": "Syne, sans-serif",
+      "type": "fontFamily",
+      "description": "Hero headlines, brand wordmarks, high-impact PLG numbers"
+    },
+    "ui": {
+      "value": "'Plus Jakarta Sans', system-ui, sans-serif",
+      "type": "fontFamily",
+      "description": "Interface buttons, form fields, tables, body paragraphs"
+    },
+    "mono": {
+      "value": "'JetBrains Mono', monospace",
+      "type": "fontFamily",
+      "description": "Financial billing totals, tabular digits, ESC/POS receipts, hotkeys"
+    }
+  },
+  "borderRadius": {
+    "sm": { "value": "6px", "type": "borderRadius" },
+    "md": { "value": "10px", "type": "borderRadius" },
+    "lg": { "value": "14px", "type": "borderRadius" },
+    "xl": { "value": "20px", "type": "borderRadius" },
+    "full": { "value": "9999px", "type": "borderRadius" }
+  },
+  "spacing": {
+    "1": { "value": "4px", "type": "spacing" },
+    "2": { "value": "8px", "type": "spacing" },
+    "3": { "value": "12px", "type": "spacing" },
+    "4": { "value": "16px", "type": "spacing" },
+    "6": { "value": "24px", "type": "spacing" },
+    "8": { "value": "32px", "type": "spacing" },
+    "12": { "value": "48px", "type": "spacing" },
+    "16": { "value": "64px", "type": "spacing" }
+  }
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%" fill="none">
+  <!-- MotoBan 100% Monochrome (Black & White 1-Bit Thermal / Engraving Standard) -->
+  
+  <!-- Emblem: 1-Bit Solid High-Contrast -->
+  <g transform="translate(10, 10)">
+    <!-- Hexagonal Bolt Outline -->
+    <polygon points="50,4 86,25 86,67 50,88 14,67 14,25" 
+             fill="#FFFFFF" 
+             stroke="#000000" 
+             stroke-width="5" 
+             stroke-linejoin="round" />
+    
+    <!-- Inner Dark Solid Core -->
+    <polygon points="50,14 80,31 80,61 50,78 20,61 20,31" 
+             fill="#000000" />
+
+    <!-- Pure White Lightning Cutout -->
+    <path d="M54,18 L34,50 L48,50 L42,76 L66,44 L52,44 Z" 
+          fill="#FFFFFF" />
+  </g>
+
+  <!-- Wordmark "MotoBan" in Pure Black -->
+  <g transform="translate(125, 68)">
+    <text font-family="'Syne', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+          font-weight="800" 
+          font-size="48" 
+          letter-spacing="-1.5" 
+          fill="#000000">
+      MotoBan
+    </text>
+  </g>
+
+  <!-- Tagline in Pure Black -->
+  <g transform="translate(127, 94)">
+    <text font-family="'JetBrains Mono', monospace" 
+          font-weight="700" 
+          font-size="11.5" 
+          letter-spacing="3.2" 
+          fill="#000000">
+      AI GARAGE BILLING COCKPIT
+    </text>
+  </g>
+
+  <!-- Solid Dot -->
+  <circle cx="396" cy="91" r="3.5" fill="#000000" />
+</svg>
