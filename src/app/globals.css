@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-syne: 'Syne', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+  --color-void: #0B0F19;
+  --color-navy: #151D2F;
+  --color-glass: #1C263D;
+  --color-lime: #C9F31D;
+  --color-orange: #FF5E14;
+}
+
+html {
+  background-color: #0B0F19;
+  color: #F3F4F6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0B0F19;
+  color: #E2E8F0;
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C263D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9F31D;
+}
+
+/* Rolling Text for Navbar and Links */
+.rolling-text {
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1.1;
+  height: 1.1em;
+  vertical-align: text-top;
+}
+.rolling-text .block {
+  display: block;
+  transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.rolling-text:hover .block,
+.group:hover .rolling-text .block {
+  transform: translateY(-100%);
+}
+
+/* Star SVG animation from Geekfolio */
+.svg-animation.star {
+  display: inline-block;
+  animation: spin 16s linear infinite;
+  color: #C9F31D;
+}
+.svg-animation.star line {
+  stroke: #C9F31D;
+  stroke-width: 2.5;
+  transform-origin: 50% 50%;
+  transform: rotate(var(--transform));
+}
+
+/* Circular Rotating Text */
+.rotate-circle {
+  animation: spin 18s linear infinite;
+}
+
+/* Grid Pattern Background */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(201, 243, 29, 0.12) 1px, transparent 1px),
+                    radial-gradient(rgba(255, 94, 20, 0.08) 1px, #0B0F19 1px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphic Card */
+.glass-panel {
+  background: rgba(28, 38, 61, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(28, 38, 61, 0.85);
+  border-color: rgba(201, 243, 29, 0.35);
+  box-shadow: 0 10px 40px -10px rgba(201, 243, 29, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Circular Star Button from Geekfolio */
+.butn-circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: #C9F31D;
+  color: #0B0F19;
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.butn-circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 50px rgba(201, 243, 29, 0.5);
+  background: #ffffff;
+}
+
+/* Stroke effect text */
+.text-stroke {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.25);
+  color: transparent;
+}
+.text-stroke-lime {
+  -webkit-text-stroke: 1.5px rgba(201, 243, 29, 0.6);
+  color: transparent;
+}
