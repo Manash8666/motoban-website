@@ -101,6 +101,14 @@ export default function Footer() {
                 </li>
               ))}
               <li>
+                <Link
+                  href="/eula"
+                  className="text-slate-400 hover:text-[#C9F31D] transition-colors flex items-center space-x-1"
+                >
+                  <span>EULA Policy</span>
+                </Link>
+              </li>
+              <li>
                 <a
                   href={SITE_CONFIG.demoUrl}
                   target="_blank"
@@ -192,12 +200,14 @@ export default function Footer() {
 
         {/* Sub-footer */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-          <div className="flex items-center space-x-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span>© {new Date().getFullYear()} MotoBan.</span>
             <span className="text-slate-400">•</span>
-            <span>All rights reserved.</span>
-            <span className="text-slate-400">•</span>
             <span>Powered by HybridStudioZ.</span>
+            <span className="text-slate-400">•</span>
+            <Link href="/eula" className="text-slate-400 hover:text-[#C9F31D] underline transition-colors">
+              EULA Policy
+            </Link>
           </div>
 
           <div className="flex items-center space-x-6">
