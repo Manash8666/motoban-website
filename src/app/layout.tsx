@@ -6,6 +6,7 @@ import Preloader from "@/components/layout/Preloader";
 import CustomCursor from "@/components/layout/CustomCursor";
 import ScrollProgressButton from "@/components/layout/ScrollProgressButton";
 import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
+import TelemetryBeacon from "@/components/analytics/TelemetryBeacon";
 
 export const metadata: Metadata = {
   title: "MotoBan — AI-Powered Garage Billing, Job Cards & Spares Matrix",
@@ -43,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#0B0F19] text-[#E2E8F0] antialiased selection:bg-[#C9F31D] selection:text-[#0B0F19]">
+        <TelemetryBeacon source="motoban-website" />
         <SmoothScrollProvider>
           <Preloader />
           <CustomCursor />
