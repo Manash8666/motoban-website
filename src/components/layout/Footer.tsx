@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SITE_CONFIG, NAV_LINKS } from "@/lib/constants";
 import {
   Phone,
+  Mail,
   MapPin,
   ExternalLink,
   Github,
@@ -130,6 +131,15 @@ export default function Footer() {
                   className="hover:text-white transition-colors font-mono font-medium"
                 >
                   {SITE_CONFIG.phone}
+                </a>
+              </div>
+              <div className="flex items-center space-x-2.5">
+                <Mail className="w-4 h-4 text-[#2563EB] shrink-0" />
+                <a
+                  href={SITE_CONFIG.emailHref}
+                  className="hover:text-white transition-colors font-mono font-medium"
+                >
+                  {SITE_CONFIG.email}
                 </a>
               </div>
               <div className="flex items-center space-x-2 text-xs text-slate-400 pt-1">

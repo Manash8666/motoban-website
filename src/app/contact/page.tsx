@@ -3,6 +3,7 @@
 import { useState } from "react";
 import {
   Phone,
+  Mail,
   MessageSquare,
   MapPin,
   ExternalLink,
@@ -117,6 +118,22 @@ export default function ContactPage() {
                   <span>Chat on WhatsApp</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
+              </div>
+            </div>
+
+            {/* Official Email Card */}
+            <div className="glass-panel p-6 rounded-3xl border border-white/10 flex items-start space-x-4">
+              <div className="w-12 h-12 rounded-2xl bg-[#2563EB]/15 border border-[#2563EB]/30 flex items-center justify-center text-[#2563EB] shrink-0">
+                <Mail className="w-6 h-6" />
+              </div>
+              <div className="space-y-1">
+                <span className="text-xs font-mono uppercase text-[#2563EB] font-bold">Official Inquiries & Support</span>
+                <h4 className="font-syne font-bold text-lg text-white">
+                  <a href={SITE_CONFIG.emailHref} className="hover:text-[#C9F31D] transition-colors font-mono">
+                    {SITE_CONFIG.email}
+                  </a>
+                </h4>
+                <p className="text-xs text-slate-400">Response within 24 hours</p>
               </div>
             </div>
 
