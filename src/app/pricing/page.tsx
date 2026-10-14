@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Check, Sparkles, HelpCircle, ChevronDown, ChevronUp, Calculator, ArrowRight, ShieldCheck, Phone } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 import GarageProfitCalculator from "@/components/pricing/GarageProfitCalculator";
+import OnboardingModal from "@/components/modals/OnboardingModal";
 
 const comparisonFeatures = [
   { name: "Monthly Active Job Cards", starter: "50 / mo", pro: "Unlimited", enterprise: "Unlimited Multi-Branch" },
@@ -58,6 +59,8 @@ const faqs = [
 
 export default function PricingPage() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly" | "lifetime">("yearly");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedTier, setSelectedTier] = useState("Garage Pro");
 
   // ROI Calculator states
   const [bikesPerDay, setBikesPerDay] = useState(25);
@@ -169,14 +172,16 @@ export default function PricingPage() {
                 <li className="flex items-center space-x-2"><Check className="w-4 h-4 text-[#10B981]" /><span>Single Device Login</span></li>
               </ul>
             </div>
-            <a
-              href={SITE_CONFIG.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedTier("PitStop Starter (₹0)");
+                setIsModalOpen(true);
+              }}
               className="w-full py-3.5 rounded-xl bg-[#151D2F] border border-white/10 text-center font-syne font-bold text-xs uppercase tracking-wider text-white hover:bg-[#1C263D] transition-colors"
             >
-              Start Free
-            </a>
+              Start Free (30-Sec Setup)
+            </button>
           </div>
 
           {/* Garage Pro (Highlighted) */}
@@ -222,14 +227,16 @@ export default function PricingPage() {
                 <li className="flex items-center space-x-2"><Check className="w-4 h-4 text-[#C9F31D]" /><span>Mechanic Commission Payroll</span></li>
               </ul>
             </div>
-            <a
-              href={SITE_CONFIG.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedTier(`Garage Pro (${billingCycle})`);
+                setIsModalOpen(true);
+              }}
               className="w-full py-4 rounded-xl bg-[#C9F31D] text-[#0B0F19] text-center font-syne font-black text-xs uppercase tracking-wider shadow-lime-glow hover:bg-white transition-colors"
             >
-              Get Garage Pro
-            </a>
+              Get Garage Pro (Setup in 30s)
+            </button>
           </div>
 
           {/* Enterprise */}
@@ -254,15 +261,17 @@ export default function PricingPage() {
                 <li className="flex items-center space-x-2"><Check className="w-4 h-4 text-[#E5C07B]" /><span>Direct Phone Support: {SITE_CONFIG.phone}</span></li>
               </ul>
             </div>
-            <a
-              href={SITE_CONFIG.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedTier("Multi-Bay Enterprise (₹24,999)");
+                setIsModalOpen(true);
+              }}
               className="w-full py-3.5 rounded-xl bg-[#151D2F] border border-white/10 text-center font-syne font-bold text-xs uppercase tracking-wider text-white hover:border-[#E5C07B] hover:text-[#E5C07B] transition-colors flex items-center justify-center space-x-2"
             >
               <Phone className="w-4 h-4" />
-              <span>Contact for Enterprise</span>
-            </a>
+              <span>Contact for Enterprise Setup</span>
+            </button>
           </div>
 
         </div>
@@ -346,6 +355,11 @@ export default function PricingPage() {
         </div>
       </div>
 
+      <OnboardingModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        defaultPlan={selectedTier}
+      />
     </div>
   );
 }

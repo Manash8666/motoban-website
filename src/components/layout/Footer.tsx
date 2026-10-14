@@ -200,27 +200,33 @@ export default function Footer() {
 
         {/* Programmatic SEO Landing Directory */}
         <div className="py-8 border-b border-white/10">
-          <span className="text-[11px] font-mono uppercase tracking-widest text-slate-400 block font-bold mb-4">
+          <span className="text-[11px] font-mono uppercase tracking-widest text-[#C9F31D] block font-bold mb-4">
             Workshop Management Software Specialities &amp; Regional Solutions:
           </span>
-          <div className="flex flex-wrap gap-x-6 gap-y-2.5 text-xs text-slate-400">
-            <Link href="/features#two-wheeler-workshops" className="hover:text-[#C9F31D] transition-colors">
-              • Two-Wheeler &amp; Royal Enfield Garage Software
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs text-slate-400">
+            <Link href="/solutions/two-wheeler-garage-billing-software" className="hover:text-[#C9F31D] transition-colors flex items-center gap-1.5">
+              <span>•</span> Two-Wheeler Garage Billing (BS4/BS6)
             </Link>
-            <Link href="/features#car-service-centers" className="hover:text-[#2563EB] transition-colors">
-              • Multi-Brand Car &amp; SUV Diagnostic Centers
+            <Link href="/solutions/royal-enfield-superbike-workshop-pos" className="hover:text-[#C9F31D] transition-colors flex items-center gap-1.5">
+              <span>•</span> Royal Enfield &amp; Superbike POS
             </Link>
-            <Link href="/features#detailing-studios" className="hover:text-[#E5C07B] transition-colors">
-              • Ceramic Coating &amp; Detailing Studios
+            <Link href="/solutions/multi-brand-car-service-center-erp" className="hover:text-[#2563EB] transition-colors flex items-center gap-1.5">
+              <span>•</span> Multi-Brand Car Service ERP
             </Link>
-            <Link href="/features#spare-parts-dealers" className="hover:text-[#FF5E14] transition-colors">
-              • Auto Spare Parts Retailers &amp; Counter POS
+            <Link href="/solutions/automobile-spare-parts-shop-inventory-pos" className="hover:text-[#FF5E14] transition-colors flex items-center gap-1.5">
+              <span>•</span> Auto Spare Parts Inventory POS
             </Link>
-            <Link href="/features#ev-service-hubs" className="hover:text-[#10B981] transition-colors">
-              • EV Two-Wheeler &amp; Battery Service Centers
+            <Link href="/solutions/ev-scooter-battery-service-management" className="hover:text-[#10B981] transition-colors flex items-center gap-1.5">
+              <span>•</span> EV Scooter &amp; Battery Hub OS
             </Link>
-            <Link href="/pricing#profit-calculator" className="hover:text-[#C9F31D] transition-colors">
-              • Workshop Revenue Leakage Calculator
+            <Link href="/solutions/offline-desktop-garage-billing-app" className="hover:text-[#C9F31D] transition-colors flex items-center gap-1.5">
+              <span>•</span> 100% Offline Desktop Garage POS
+            </Link>
+            <Link href="/solutions/whatsapp-digital-job-card-maker" className="hover:text-[#25D366] transition-colors flex items-center gap-1.5">
+              <span>•</span> WhatsApp Digital Job Card Maker
+            </Link>
+            <Link href="/solutions/ahmedabad-gujarat-garage-software" className="hover:text-[#E5C07B] transition-colors flex items-center gap-1.5">
+              <span>•</span> Ahmedabad &amp; Gujarat Garage OS
             </Link>
           </div>
         </div>

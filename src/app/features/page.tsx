@@ -17,6 +17,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
+import LivePosSandbox from "@/components/sandbox/LivePosSandbox";
 
 // Sample voice prompts for the simulator
 const samplePrompts = [
@@ -230,6 +231,11 @@ export default function FeaturesPage() {
             </div>
           )}
         </div>
+      </div>
+
+      {/* FULL LIVE MINI-POS SANDBOX TERMINAL */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <LivePosSandbox />
       </div>
 
       {/* SECTION 1: INTERACTIVE AI VOICE-TO-INVOICE SIMULATOR */}

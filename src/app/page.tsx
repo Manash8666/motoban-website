@@ -5,6 +5,8 @@ import ParallaxDivider from "@/components/home/ParallaxDivider";
 import CapabilitiesGrid from "@/components/home/CapabilitiesGrid";
 import AppShowcase from "@/components/home/AppShowcase";
 import InteractiveBillGenerator from "@/components/home/InteractiveBillGenerator";
+import LivePosSandbox from "@/components/sandbox/LivePosSandbox";
+import InstallPromptBanner from "@/components/pwa/InstallPromptBanner";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import PricingSection from "@/components/home/PricingSection";
 import HorizontalScrollContainer from "@/components/home/HorizontalScrollContainer";
@@ -31,13 +33,23 @@ export default function HomePage() {
       {/* 6. Asymmetrical Interactive App Showcase */}
       <AppShowcase />
 
-      {/* 7. Viral PLG: Live 15-Second WhatsApp Bill & Job Card Generator */}
+      {/* 7. Zero-Login Mini-POS Terminal Sandbox */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <LivePosSandbox />
+      </section>
+
+      {/* 8. Viral PLG: Live 15-Second WhatsApp Bill & Job Card Generator */}
       <InteractiveBillGenerator />
 
-      {/* 8. Garage Owner Testimonials Carousel */}
+      {/* 9. Smart OS-Aware PWA & Multi-Device Install Banner */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <InstallPromptBanner />
+      </div>
+
+      {/* 10. Garage Owner Testimonials Carousel */}
       <TestimonialsSection />
 
-      {/* 8. 3-Tier Interactive Pricing */}
+      {/* 11. 3-Tier Interactive Pricing */}
       <PricingSection />
 
       {/* 9. GSAP 3-Panel Horizontal Scroll Section */}

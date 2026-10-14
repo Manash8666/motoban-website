@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { SOLUTIONS_DATA } from "@/lib/solutionsData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://motoban.in";
@@ -43,6 +44,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // Programmatic SEO Dedicated Landing Hubs (/solutions/[slug])
+  const solutionRoutes = Object.keys(SOLUTIONS_DATA).map((slug) => ({
+    url: `${baseUrl}/solutions/${slug}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
   // Programmatic SEO landing anchors
   const programmaticSections = [
     "two-wheeler-workshops",
@@ -57,5 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...coreRoutes, ...programmaticSections];
+  return [...coreRoutes, ...solutionRoutes, ...programmaticSections];
 }

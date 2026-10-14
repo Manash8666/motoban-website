@@ -12,6 +12,7 @@ import {
   Check,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
+import InstallPromptBanner from "@/components/pwa/InstallPromptBanner";
 
 const sections = [
   { id: "quickstart", title: "1. Quickstart (Cloud SaaS)", icon: BookOpen },
@@ -349,6 +350,11 @@ NEXT_PUBLIC_ENABLE_OFFLINE_SYNC=true`}
 
           </div>
 
+        </div>
+
+        {/* Multi-Device PWA Installation Banner */}
+        <div className="mt-12">
+          <InstallPromptBanner />
         </div>
 
       </div>

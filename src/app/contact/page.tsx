@@ -26,9 +26,28 @@ export default function ContactPage() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+
+    // Asynchronously record lead in lead pipeline
+    try {
+      fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          workshopName: formData.workshopName,
+          ownerName: formData.ownerName,
+          phone: formData.phone,
+          city: "India",
+          workshopType: formData.vehicleType,
+          dailyVehicles: 20,
+          selectedPlan: "Demo Request",
+        }),
+      }).catch((err) => console.error("Lead sync error:", err));
+    } catch {
+      // Non-blocking
+    }
 
     // Build pre-filled WhatsApp message
     const notesPart = formData.notes ? `- Notes: ${formData.notes}` : "";

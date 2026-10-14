@@ -7,6 +7,7 @@ export const SITE_CONFIG = {
   email: "info@motoban.in",
   emailHref: "mailto:info@motoban.in",
   demoUrl: "https://mechbillerai.vercel.app/",
+  appUrl: "https://mechbillerai.vercel.app/",
   githubUrl: "https://github.com/Manash8666/motoban-website.git",
   phone: "+91 6359635416",
   phoneHref: "tel:+916359635416",

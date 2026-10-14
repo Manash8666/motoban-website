@@ -10,6 +10,7 @@ import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import TelemetryBeacon from "@/components/analytics/TelemetryBeacon";
 import JsonLdSchema from "@/components/seo/JsonLdSchema";
 import ViralFloatingBar from "@/components/layout/ViralFloatingBar";
+import MechanicShortcutBar from "@/components/cro/MechanicShortcutBar";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -127,6 +128,7 @@ export default function RootLayout({
       >
         <TelemetryBeacon source="motoban-website" />
         <ViralFloatingBar />
+        <MechanicShortcutBar />
         <SmoothScrollProvider>
           <Preloader />
           <CustomCursor />
