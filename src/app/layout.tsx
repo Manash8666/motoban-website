@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Syne, Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +10,27 @@ import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 import TelemetryBeacon from "@/components/analytics/TelemetryBeacon";
 import JsonLdSchema from "@/components/seo/JsonLdSchema";
 import ViralFloatingBar from "@/components/layout/ViralFloatingBar";
+
+const syne = Syne({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-syne",
+  weight: ["500", "600", "700", "800"],
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jakarta",
+  weight: ["400", "500", "600", "700"],
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains",
+  weight: ["400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://motoban.in"),
@@ -100,7 +122,9 @@ export default function RootLayout({
       <head>
         <JsonLdSchema />
       </head>
-      <body className="bg-[#0B0F19] text-[#E2E8F0] antialiased selection:bg-[#C9F31D] selection:text-[#0B0F19]">
+      <body
+        className={`${syne.variable} ${jakarta.variable} ${jetbrains.variable} bg-[#0B0F19] text-[#E2E8F0] antialiased selection:bg-[#C9F31D] selection:text-[#0B0F19] font-sans`}
+      >
         <TelemetryBeacon source="motoban-website" />
         <ViralFloatingBar />
         <SmoothScrollProvider>

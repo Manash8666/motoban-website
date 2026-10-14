@@ -8,7 +8,12 @@ import { SITE_CONFIG } from "@/lib/constants";
 // 3D WebGL Piston & Gear Assembly in Background
 const HeroEngineCanvas = dynamic(() => import("@/components/3d/HeroEngineCanvas"), {
   ssr: false,
-  loading: () => <div className="absolute inset-0 bg-[#0B0F19]" />,
+  loading: () => (
+    <div
+      className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(201,243,29,0.1)_0%,rgba(11,15,25,0)_70%)] pointer-events-none"
+      aria-hidden="true"
+    />
+  ),
 });
 
 export default function HeroSection() {
