@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Shield, FileText, CheckCircle2, AlertCircle, Mail, MapPin, ExternalLink, ArrowLeft } from "lucide-react";
+import { Shield, FileText, CheckCircle2, AlertCircle, Mail, MapPin, ExternalLink, ArrowLeft, GitFork, Scale, Coins } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "End User License Agreement (EULA) — MotoBan",
   description:
-    "End User License Agreement (EULA) for MotoBan workshop software and the HybridStudioZ engine. Review terms of license, privacy, hardware usage, and data ownership.",
+    "End User License Agreement (EULA) for MotoBan workshop software and the HybridStudioZ engine. Review terms of license, privacy, hardware usage, open-source reciprocity, and data ownership.",
 };
 
 const sections = [
   { id: "acknowledgment", title: "1. Acknowledgment & Parties" },
   { id: "grant-of-license", title: "2. Grant of License" },
-  { id: "restrictions", title: "3. Restrictions on Use" },
-  { id: "intellectual-property", title: "4. Intellectual Property & HybridStudioZ Engine" },
-  { id: "data-ownership", title: "5. Workshop Data & Customer Records" },
-  { id: "voice-ai", title: "6. AI Voice Dictation & Speech Parsing" },
-  { id: "hardware", title: "7. Hardware & Thermal POS Printers" },
-  { id: "gst-disclaimer", title: "8. Tax, HSN & GST Compliance Disclaimer" },
-  { id: "limitation", title: "9. Warranty Disclaimer & Limitation of Liability" },
-  { id: "termination", title: "10. Termination & Data Portability" },
-  { id: "governing-law", title: "11. Governing Law & Jurisdiction" },
-  { id: "contact", title: "12. Contact & Legal Notices" },
+  { id: "open-source-royalty", title: "3. Reciprocal Open-Source & 3x Royalty Policy" },
+  { id: "restrictions", title: "4. Restrictions on Use" },
+  { id: "intellectual-property", title: "5. Intellectual Property & HybridStudioZ Engine" },
+  { id: "data-ownership", title: "6. Workshop Data & Customer Records" },
+  { id: "voice-ai", title: "7. AI Voice Dictation & Speech Parsing" },
+  { id: "hardware", title: "8. Hardware & Thermal POS Printers" },
+  { id: "gst-disclaimer", title: "9. Tax, HSN & GST Compliance Disclaimer" },
+  { id: "limitation", title: "10. Warranty Disclaimer & Limitation of Liability" },
+  { id: "termination", title: "11. Termination & Data Portability" },
+  { id: "governing-law", title: "12. Governing Law & Jurisdiction" },
+  { id: "contact", title: "13. Contact & Legal Notices" },
 ];
 
 export default function EulaPage() {
@@ -156,10 +157,74 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 3 */}
+            {/* Section 3: Reciprocal Open-Source & 3x Lifetime Royalty Policy */}
+            <section id="open-source-royalty" className="space-y-4 pt-6 border-t border-white/10">
+              <div className="flex items-center space-x-2.5 text-[#C9F31D]">
+                <Scale className="w-5 h-5 shrink-0" />
+                <h2 className="font-syne font-bold text-xl text-white">
+                  3. Reciprocal Open-Source &amp; 3x Lifetime Royalty Policy
+                </h2>
+              </div>
+              
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#1C263D] via-[#151D2F] to-[#0B0F19] border-2 border-[#C9F31D]/40 space-y-4 shadow-xl">
+                <div className="flex items-center space-x-2 text-xs font-mono font-bold uppercase tracking-wider text-[#C9F31D]">
+                  <AlertCircle className="w-4 h-4 text-[#C9F31D]" />
+                  <span>Mandatory Dual-Licensing Compliance Policy</span>
+                </div>
+                
+                <p className="text-xs text-white leading-relaxed">
+                  If any individual developer, company, contractor, agency, or third-party entity accesses, clones, forks, copies, incorporates, modifies, redistributes, or builds upon either the <strong>MotoBan Website</strong> (<a href="https://motoban.in" className="text-[#C9F31D] underline font-medium" target="_blank" rel="noopener noreferrer">motoban.in</a>) or the <strong>mechbillerai Git Repository</strong> (<a href="https://github.com/Manash8666/mechbillerai.git" className="text-[#C9F31D] underline font-mono font-medium" target="_blank" rel="noopener noreferrer">github.com/Manash8666/mechbillerai.git</a>), according to EULA policies they are legally subjected to abide by <strong>either</strong> of the following two mandatory options prior to any commercial deployment or operation:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                  {/* Option A */}
+                  <div className="p-4 rounded-xl bg-[#0B0F19]/90 border border-[#C9F31D]/30 space-y-2.5">
+                    <div className="flex items-center space-x-2 text-xs font-mono font-bold text-[#C9F31D] uppercase tracking-wide">
+                      <GitFork className="w-4 h-4 text-[#C9F31D] shrink-0" />
+                      <span>Option A: 100% Open-Source Obligation</span>
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      You must release <strong>100% of your entire resulting project, codebase, application, and all derivative works as fully public, free open-source software</strong> under an identical reciprocal copyleft license.
+                    </p>
+                    <ul className="text-[11px] text-slate-400 space-y-1 pl-3 list-disc">
+                      <li>Complete source code must be published in a public git repository.</li>
+                      <li>Zero proprietary paywalls, closed-source sub-modules, or gated enterprise extensions.</li>
+                      <li>Attribution to MotoBan and HybridStudioZ must remain intact.</li>
+                    </ul>
+                  </div>
+
+                  {/* Option B */}
+                  <div className="p-4 rounded-xl bg-[#0B0F19]/90 border border-[#FF5E14]/40 space-y-2.5">
+                    <div className="flex items-center space-x-2 text-xs font-mono font-bold text-[#FF5E14] uppercase tracking-wide">
+                      <Coins className="w-4 h-4 text-[#FF5E14] shrink-0" />
+                      <span>Option B: 3x Lifetime License Royalty</span>
+                    </div>
+                    <p className="text-xs text-slate-300 leading-relaxed">
+                      If you elect <strong>not</strong> to 100% open-source your project, or if your application, platform, website, or service is proprietary, closed-source, commercially distributed, or monetized for commercial gain, you are legally subjected to <strong>pay a mandatory Royalty that is 3 times (3x) the Lifetime License</strong> of the MotoBan App and Website directly to HybridStudioZ:
+                    </p>
+                    <div className="p-2.5 rounded-lg bg-[#151D2F] border border-white/10 space-y-1 text-[11px] font-mono text-slate-200">
+                      <div className="flex justify-between items-center">
+                        <span className="text-slate-400">Garage Pro (3x Royalty):</span>
+                        <strong className="text-[#C9F31D]">3 × ₹14,999 = ₹44,997 INR</strong>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-slate-400">Enterprise Multi-Bay (3x):</span>
+                        <strong className="text-[#FF5E14]">3 × ₹39,999 = ₹119,997 INR</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-lg bg-[#0B0F19]/60 border border-white/10 text-[11px] text-slate-400 leading-relaxed">
+                  <strong className="text-white font-semibold">Statutory Legal Remedy:</strong> Any closed-source or commercial deployment of the MotoBan Website or mechbillerai repository codebase without pre-paying the mandatory 3x Lifetime License Royalty constitutes willful copyright infringement and breach of license under the Indian Copyright Act, 1957 and international IP treaties. HybridStudioZ reserves all legal rights to claim statutory damages, retroactive royalty fees, and full legal recovery costs.
+                </div>
+              </div>
+            </section>
+
+            {/* Section 4 */}
             <section id="restrictions" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                3. Restrictions on Use
+                4. Restrictions on Use
               </h2>
               <p>Except as expressly authorized under this Agreement or by written consent from HybridStudioZ, you agree not to:</p>
               <ul className="list-disc list-inside space-y-1.5 pl-2 text-xs text-slate-300">
@@ -170,10 +235,10 @@ export default function EulaPage() {
               </ul>
             </section>
 
-            {/* Section 4 */}
+            {/* Section 5 */}
             <section id="intellectual-property" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                4. Intellectual Property &amp; HybridStudioZ Engine
+                5. Intellectual Property &amp; HybridStudioZ Engine
               </h2>
               <p>
                 The MotoBan brand, logos, user interfaces, 3D interactive WebGL graphics, GSAP design systems, documentation, source code, and the underlying <strong>HybridStudioZ</strong> billing engine are the exclusive intellectual property of HybridStudioZ.
@@ -183,10 +248,10 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 5 */}
+            {/* Section 6 */}
             <section id="data-ownership" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                5. Workshop Data &amp; Customer Records
+                6. Workshop Data &amp; Customer Records
               </h2>
               <div className="p-4 rounded-xl bg-[#151D2F] border border-white/5 space-y-2">
                 <span className="font-syne font-bold text-xs uppercase text-[#C9F31D] flex items-center space-x-1.5">
@@ -202,10 +267,10 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 6 */}
+            {/* Section 7 */}
             <section id="voice-ai" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                6. AI Voice Dictation &amp; Speech Parsing
+                7. AI Voice Dictation &amp; Speech Parsing
               </h2>
               <p>
                 MotoBan incorporates voice recognition features powered by the HybridStudioZ engine to convert spoken workshop terminology into billable items and HSN codes.
@@ -215,10 +280,10 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 7 */}
+            {/* Section 8 */}
             <section id="hardware" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                7. Hardware &amp; Thermal POS Printers
+                8. Hardware &amp; Thermal POS Printers
               </h2>
               <p>
                 MotoBan supports native browser hardware drivers (WebHID / WebSerial / ESC/POS) for standard 58mm and 80mm thermal receipt printers and USB barcode scanners.
@@ -228,10 +293,10 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 8 */}
+            {/* Section 9 */}
             <section id="gst-disclaimer" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                8. Tax, HSN &amp; GST Compliance Disclaimer
+                9. Tax, HSN &amp; GST Compliance Disclaimer
               </h2>
               <p>
                 MotoBan assists garages by automatically mapping items to standard Indian HSN/SAC codes and calculating applicable GST tax rates (CGST, SGST, IGST).
@@ -241,10 +306,10 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 9 */}
+            {/* Section 10 */}
             <section id="limitation" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                9. Warranty Disclaimer &amp; Limitation of Liability
+                10. Warranty Disclaimer &amp; Limitation of Liability
               </h2>
               <p className="text-xs uppercase font-mono tracking-wider text-slate-400">
                 DISCLAIMER OF WARRANTIES:
@@ -260,10 +325,10 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 10 */}
+            {/* Section 11 */}
             <section id="termination" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                10. Termination &amp; Data Portability
+                11. Termination &amp; Data Portability
               </h2>
               <p>
                 You may terminate this Agreement at any time by discontinuing use of the Software. HybridStudioZ may suspend or terminate your license immediately if you breach any material provision of this Agreement.
@@ -273,20 +338,20 @@ export default function EulaPage() {
               </p>
             </section>
 
-            {/* Section 11 */}
+            {/* Section 12 */}
             <section id="governing-law" className="space-y-3 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                11. Governing Law &amp; Jurisdiction
+                12. Governing Law &amp; Jurisdiction
               </h2>
               <p>
                 This Agreement shall be governed by, construed, and enforced in accordance with the laws of the Republic of India. Any dispute, claim, or controversy arising out of or relating to this Agreement shall be subject to the exclusive jurisdiction of the competent courts located in <strong>Ahmedabad, Gujarat, India</strong>.
               </p>
             </section>
 
-            {/* Section 12 */}
+            {/* Section 13 */}
             <section id="contact" className="space-y-4 pt-6 border-t border-white/10">
               <h2 className="font-syne font-bold text-xl text-white">
-                12. Contact &amp; Legal Notices
+                13. Contact &amp; Legal Notices
               </h2>
               <p>
                 If you have questions regarding this End User License Agreement, custom workshop enterprise terms, or commercial licensing, please reach out to our legal and operations desk:

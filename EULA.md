@@ -30,7 +30,32 @@ Subject to the terms and conditions of this Agreement and timely payment of appl
 
 ---
 
-## 2. Restrictions on Use
+## 2. Reciprocal Open-Source & 3x Lifetime License Commercial Royalty Clause
+
+**MANDATORY POLICY FOR WEBSITE CODE & MECHBILLERAI REPOSITORY USAGE:**
+
+If any individual developer, contractor, software agency, corporate entity, or organization accesses, clones, forks, copies, modifies, redistributes, or builds upon either:
+1. **The MotoBan Website** ([https://motoban.in](https://motoban.in)), and/or
+2. **The `mechbillerai` Git Repository** ([https://github.com/Manash8666/mechbillerai.git](https://github.com/Manash8666/mechbillerai.git)),
+
+According to formal EULA policies and terms of usage, the user/entity is strictly legally subjected to **either of the following two mandatory options** prior to deployment, distribution, or commercial operation:
+
+### Option A: 100% Reciprocal Open-Source Obligation
+You must release **100% of your resulting project, platform, codebase, and derivative software as completely free and public open-source software** under an identical reciprocal copyleft license:
+- Your entire repository, including all backend business logic, frontend UI components, 3D assets, speech parsing pipelines, and database schemas, must be published openly on a public version-control platform (e.g., GitHub / GitLab).
+- No proprietary sub-licensing, closed-source enterprise modules, gated access, or paid feature paywalls are permitted.
+- Full copyright attribution to MotoBan and HybridStudioZ must be conspicuously preserved in all source headers and UI footers.
+
+### Option B: 3x Lifetime License Commercial Royalty Payment
+If you elect **not** to 100% open-source your project, or if your application, platform, website, or product is proprietary, closed-source, commercially distributed, hosted as a paid service, or monetized for commercial gain, you are legally subjected to **pay a mandatory Royalty equivalent to exactly three times (3x) the Lifetime License fee of the MotoBan App and Website** directly to **HybridStudioZ** prior to commercial launch or production operation:
+- **Standard Workshop Commercial Royalty:** `3 × ₹14,999 = ₹44,997 INR` (or international equivalent at invoice date)
+- **Enterprise / Multi-Bay Commercial Royalty:** `3 × ₹39,999 = ₹119,997 INR` (or international equivalent at invoice date)
+
+Failure to either 100% open-source your derivative work or pre-pay the mandatory 3x Lifetime License Royalty constitutes willful copyright infringement, commercial misappropriation, and breach of contract under the Indian Copyright Act, 1957 and international copyright conventions. HybridStudioZ reserves the right to seek statutory damages, injunctive relief, retroactive royalty claims, and full recovery of legal costs.
+
+---
+
+## 3. Restrictions on Use
 
 Except as expressly authorized in writing by HybridStudioZ, you shall not:
 
@@ -41,14 +66,14 @@ Except as expressly authorized in writing by HybridStudioZ, you shall not:
 
 ---
 
-## 3. Intellectual Property Rights
+## 4. Intellectual Property Rights
 
 1. **Ownership of the Software:** HybridStudioZ retains all right, title, interest, and intellectual property in and to the Software, including source code, UI/UX designs, 3D WebGL assets, animations, documentation, and the **HybridStudioZ** proprietary engine.
 2. **Third-Party Open Source:** Certain software components utilized by MotoBan (such as Next.js, React, Tailwind CSS, Three.js, Lucide, and Lenis) are subject to their respective open-source licenses (e.g., MIT License).
 
 ---
 
-## 4. Workshop Data & Customer Records Ownership
+## 5. Workshop Data & Customer Records Ownership
 
 1. **100% User Ownership:** You retain exclusive ownership of all customer phone numbers, vehicle registration numbers, repair histories, inspection photographs, parts pricing, and financial invoices recorded in your workshop.
 2. **No Data Selling:** HybridStudioZ does **not** sell, rent, broker, or monetize your workshop customer records or inventory ledgers to third-party parts distributors, insurers, or marketing entities.
@@ -56,7 +81,7 @@ Except as expressly authorized in writing by HybridStudioZ, you shall not:
 
 ---
 
-## 5. AI Voice Dictation & Speech Data
+## 6. AI Voice Dictation & Speech Data
 
 1. **Voice Dictation Scope:** The HybridStudioZ speech pipeline translates natural Indian garage terminology (e.g., *"shocker"*, *"clutch katora"*, *"motul 10w40"*, *"chakka bearing"*) directly into verified HSN line items.
 2. **Explicit Activation:** Audio dictation is activated solely when the microphone button is clicked or the designated keyboard hotkey (`Ctrl + Space`) is engaged.
@@ -64,33 +89,33 @@ Except as expressly authorized in writing by HybridStudioZ, you shall not:
 
 ---
 
-## 6. Hardware & Thermal Printer Compatibility
+## 7. Hardware & Thermal Printer Compatibility
 
 1. **Driver Integration:** MotoBan interfaces with standard thermal POS printers (TVS, Epson, Posiflex, BluPrints, Xprinter) via browser-native WebHID, WebSerial, and ESC/POS command protocols.
 2. **Hardware Disclaimer:** HybridStudioZ does not manufacture or sell physical printer hardware. We are not liable for printer paper jams, mechanical wear, serial interface faults, or third-party operating system driver incompatibilities.
 
 ---
 
-## 7. GST & Statutory Compliance Disclaimer
+## 8. GST & Statutory Compliance Disclaimer
 
 1. **Computational Aid:** MotoBan assists workshops by auto-calculating GST breakdowns (CGST, SGST, IGST) and pre-populating Indian HSN/SAC codes.
 2. **Tax Responsibility:** The calculation features are provided as computational aids only. The Licensee remains solely responsible for the legal validity of invoices, accurate tax collection, and filing statutory returns with relevant government revenue authorities.
 
 ---
 
-## 8. Disclaimer of Warranties
+## 9. Disclaimer of Warranties
 
 THE SOFTWARE IS PROVIDED ON AN **&ldquo;AS IS&rdquo;** AND **&ldquo;AS AVAILABLE&rdquo;** BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. HYBRIDSTUDIOZ DOES NOT GUARANTEE THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE.
 
 ---
 
-## 9. Limitation of Liability
+## 10. Limitation of Liability
 
 TO THE FULLEST EXTENT PERMITTED UNDER APPLICABLE LAW, IN NO EVENT SHALL HYBRIDSTUDIOZ, ITS FOUNDERS, OFFICERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES (INCLUDING, WITHOUT LIMITATION, LOSS OF WORKSHOP PROFITS, BUSINESS INTERRUPTION, LOSS OF REPUTATION, OR LOSS OF DATA) ARISING FROM THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 ---
 
-## 10. Term and Termination
+## 11. Term and Termination
 
 1. **Duration:** This Agreement remains in effect until terminated by either party.
 2. **Termination by User:** You may terminate this Agreement at any time by ceasing all use of the Software.
@@ -99,13 +124,13 @@ TO THE FULLEST EXTENT PERMITTED UNDER APPLICABLE LAW, IN NO EVENT SHALL HYBRIDST
 
 ---
 
-## 11. Governing Law & Jurisdiction
+## 12. Governing Law & Jurisdiction
 
 This Agreement shall be governed by, construed, and enforced in accordance with the laws of the **Republic of India**. Any dispute, claim, or controversy arising out of or relating to this EULA shall be resolved exclusively in the competent civil courts located in **Ahmedabad, Gujarat, India**.
 
 ---
 
-## 12. Contact Information
+## 13. Contact Information
 
 For legal inquiries, custom enterprise licensing, or partner support:
 
@@ -115,3 +140,4 @@ For legal inquiries, custom enterprise licensing, or partner support:
 - **Official Domain:** [https://motoban.in](https://motoban.in)
 - **Flagship Production Partner:** MotoFit 2 (Nigam Nagar, Chandkheda, Ahmedabad) — [https://motofit2.in](https://motofit2.in)
 - **Address:** Chandkheda, Ahmedabad, Gujarat, India - 382424
+

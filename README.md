@@ -129,12 +129,20 @@ npm run start
 
 ---
 
-## 📜 End User License Agreement (EULA)
+## 📜 End User License Agreement (EULA) & Dual-Licensing Policy
 
-MotoBan is proprietary software engineered and powered by **HybridStudioZ**. Use of the software is governed by our formal End User License Agreement.
+MotoBan is software engineered and powered by **HybridStudioZ**. Use of the software, website, and underlying codebase is strictly governed by our formal End User License Agreement.
 
-- View the Markdown EULA: [`EULA.md`](./EULA.md)
-- View the Web EULA: [https://motoban.in/eula](https://motoban.in/eula)
+### ⚖️ Important Notice: Website Code & `mechbillerai` Repository Terms
+If you or your organization are using the **MotoBan Website** or the **[`mechbillerai`](https://github.com/Manash8666/mechbillerai.git)** Git repository, according to EULA policies, you are legally subjected to **either**:
+
+1. **Option A (100% Reciprocal Open-Source):** Release **100% of your resulting project, platform, codebase, and derivative works as free and public open-source software** under identical terms with all source code publicly accessible, **OR**
+2. **Option B (3x Lifetime License Commercial Royalty):** Pay a mandatory Royalty that is **3 times (3x) the Lifetime License** of the MotoBan App and Website directly to HybridStudioZ prior to commercial launch or closed-source deployment:
+   - **Standard Workshop Commercial Royalty:** `3 × ₹14,999 = ₹44,997 INR`
+   - **Enterprise Multi-Bay Commercial Royalty:** `3 × ₹39,999 = ₹119,997 INR`
+
+- 📄 **View Full Markdown EULA:** [`EULA.md`](./EULA.md)
+- 🌐 **View Web EULA:** [https://motoban.in/eula](https://motoban.in/eula)
 
 ---
 
