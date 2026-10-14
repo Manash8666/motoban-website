@@ -44,7 +44,7 @@ export default function Navbar() {
                 </span>
               </div>
               <span className="text-[10px] font-mono tracking-wider text-slate-400">
-                by MechBillerAI
+                by HybridStudioZ
               </span>
             </div>
           </Link>

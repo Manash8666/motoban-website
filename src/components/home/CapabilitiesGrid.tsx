@@ -7,7 +7,7 @@ const capabilities = [
   {
     num: "01",
     title: "AI Voice & Speech Biller",
-    desc: "Speak naturally into your device. MechBillerAI maps spoken part names and labor rates directly to verified HSN codes.",
+    desc: "Speak naturally into your device. HybridStudioZ maps spoken part names and labor rates directly to verified HSN codes.",
     icon: Mic,
   },
   {

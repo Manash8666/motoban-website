@@ -145,7 +145,7 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-xs font-syne font-bold uppercase tracking-wider text-[#C9F31D] hover:underline"
               >
-                <span>Open MechBillerAI Sandbox</span>
+                <span>Open HybridStudioZ Sandbox</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

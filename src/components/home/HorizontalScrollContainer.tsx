@@ -209,7 +209,7 @@ export default function HorizontalScrollContainer() {
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base max-w-lg mb-12 leading-relaxed">
-              Experience the speed of MechBillerAI on your phone or desktop. Instant sandbox access with sample data ready.
+              Experience the speed of HybridStudioZ on your phone or desktop. Instant sandbox access with sample data ready.
             </p>
 
             {/* Geekfolio Signature 185px Circular Magnetic Button (.butn-circle clone) */}

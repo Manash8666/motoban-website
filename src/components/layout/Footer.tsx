@@ -38,7 +38,7 @@ export default function Footer() {
                     SaaS + PWA
                   </span>
                 </div>
-                <p className="text-xs font-mono text-slate-400">Powered by MechBillerAI</p>
+                <p className="text-xs font-mono text-slate-400">Powered by HybridStudioZ</p>
               </div>
             </Link>
 
@@ -46,6 +46,20 @@ export default function Footer() {
               The next-generation workshop operating system for motorcycle and automotive garages.
               AI voice billing, digital job cards, 50,000+ spare parts SKU matrix, and 100% offline-first resilience.
             </p>
+
+            {/* Flagship Production Partner Badge */}
+            <div className="pt-1">
+              <a
+                href="https://motofit2.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-[#C9F31D]/10 border border-[#C9F31D]/30 text-[#C9F31D] text-xs font-mono hover:bg-[#C9F31D]/20 transition-colors"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#C9F31D] animate-pulse" />
+                <span>Flagship: MotoFit 2 (Nigam Nagar, Chandkheda)</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
 
             <div className="flex items-center space-x-4 pt-2">
               <a
@@ -173,7 +187,7 @@ export default function Footer() {
             <span className="text-slate-400">•</span>
             <span>All rights reserved.</span>
             <span className="text-slate-400">•</span>
-            <span>Built on MechBillerAI.</span>
+            <span>Powered by HybridStudioZ.</span>
           </div>
 
           <div className="flex items-center space-x-6">

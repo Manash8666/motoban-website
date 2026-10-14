@@ -7,11 +7,12 @@ import { SITE_CONFIG } from "@/lib/constants";
 const testimonials = [
   {
     quote:
-      "We tested MotoBan's voice biller on 18 live motorcycle repairs yesterday at our Chandkheda counter. Dictating shocker, clutch cable, and Motul oil generated a flawless GST bill in 15 seconds without touching the keyboard. It's an absolute game-changer.",
-    author: "Rakesh Patel",
-    role: "Pilot Partner, Patel MotoCare & SpeedWorks",
-    location: "Ahmedabad, Gujarat",
-    stats: "Tested on 18 live jobs yesterday",
+      "We run the Full Version of MotoBan (Powered by HybridStudioZ) across all our service bays here in Nigam Nagar, Chandkheda. Dictating Activa 6G servicing, engine oil, and brake pad replacement generates a flawless GST job card in under 15 seconds. Customers are stunned by our speed and WhatsApp billing transparency.",
+    author: "MotoFit 2 Team",
+    role: "Flagship Production Partner (Full Version)",
+    location: "Nigam Nagar, Chandkheda, Ahmedabad",
+    stats: "Live on Full Version • motofit2.in",
+    url: "https://motofit2.in",
   },
   {
     quote:
@@ -131,10 +132,23 @@ export default function TestimonialsSection() {
                   {testimonials[current].author.charAt(0)}
                 </div>
                 <div>
-                  <h5 className="font-syne font-bold text-base text-white">
-                    {testimonials[current].author}
-                  </h5>
-                  <p className="text-xs text-[#C9F31D] font-mono">
+                  <div className="flex items-center space-x-3">
+                    <h5 className="font-syne font-bold text-base text-white">
+                      {testimonials[current].author}
+                    </h5>
+                    {testimonials[current].url && (
+                      <a
+                        href={testimonials[current].url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-[#C9F31D]/10 border border-[#C9F31D]/30 text-[10px] font-mono font-bold text-[#C9F31D] hover:bg-[#C9F31D] hover:text-[#0B0F19] transition-colors"
+                      >
+                        <span>Visit {testimonials[current].url.replace("https://", "")}</span>
+                        <ArrowUpRight className="w-3 h-3" />
+                      </a>
+                    )}
+                  </div>
+                  <p className="text-xs text-[#C9F31D] font-mono mt-0.5">
                     {testimonials[current].role} • {testimonials[current].location}
                   </p>
                   <span className="text-[11px] text-slate-400 font-mono">

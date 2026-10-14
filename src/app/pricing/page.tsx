@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "How does the AI Voice Biller understand garage slang in India?",
-    a: "MechBillerAI is specially trained on real workshop vocabulary across India. Words like 'shocker', 'clutch katora', 'chakka bearing', 'side stand spring', and 'motul 10w40' are mapped phonetically directly into standardized HSN codes and inventory items without requiring formal mechanical English.",
+    a: "HybridStudioZ is specially trained on real workshop vocabulary across India. Words like 'shocker', 'clutch katora', 'chakka bearing', 'side stand spring', and 'motul 10w40' are mapped phonetically directly into standardized HSN codes and inventory items without requiring formal mechanical English.",
   },
   {
     q: "Can I migrate my existing customer and parts data from Excel or Tally?",

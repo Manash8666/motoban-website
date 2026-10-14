@@ -185,20 +185,20 @@ export default function DocsPage() {
               </div>
             </section>
 
-            {/* 3. Developer Self-Hosting (mechbillerai) */}
+            {/* 3. Developer Self-Hosting (HybridStudioZ Engine) */}
             <section id="self-hosting" className="glass-panel p-8 rounded-3xl border border-white/10 space-y-6">
               <div className="flex items-center space-x-3 pb-4 border-b border-white/10">
                 <div className="w-10 h-10 rounded-xl bg-[#2563EB]/15 flex items-center justify-center text-[#2563EB]">
                   <Terminal className="w-5 h-5" />
                 </div>
                 <div>
-                  <h2 className="font-syne font-bold text-xl text-white">3. Developer Self-Hosting (`mechbillerai`)</h2>
-                  <p className="text-xs text-slate-400">Clone and deploy your own private MotoBan instance from GitHub</p>
+                  <h2 className="font-syne font-bold text-xl text-white">3. Developer Self-Hosting (HybridStudioZ Engine)</h2>
+                  <p className="text-xs text-slate-400">Clone and deploy your own private MotoBan instance powered by HybridStudioZ</p>
                 </div>
               </div>
 
               <p className="text-xs text-slate-300 leading-relaxed">
-                Want to run MotoBan on your own private cloud or local workshop mini-server? Clone the open repository:
+                Want to run MotoBan on your own private cloud or local workshop mini-server? The underlying engine is <strong>HybridStudioZ</strong>, battle-tested in high-throughput production by our flagship partner <a href="https://motofit2.in" target="_blank" rel="noopener noreferrer" className="text-[#C9F31D] underline font-bold">MotoFit 2</a> in Nigam Nagar, Chandkheda, Ahmedabad running the Full Version. Clone the repository:
               </p>
 
               {/* Terminal Block 1: Clone */}

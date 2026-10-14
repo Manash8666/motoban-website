@@ -10,14 +10,15 @@ import SmoothScrollProvider from "@/components/layout/SmoothScrollProvider";
 export const metadata: Metadata = {
   title: "MotoBan — AI-Powered Garage Billing, Job Cards & Spares Matrix",
   description:
-    "Next-generation workshop operating system powered by MechBillerAI. 15-second AI voice GST billing, digital job cards, 50,000+ BS3/BS4/BS6 spares matrix, and 100% offline-first PWA resilience.",
+    "Next-generation workshop operating system powered by HybridStudioZ. 15-second AI voice GST billing, digital job cards, 50,000+ BS3/BS4/BS6 spares matrix, and 100% offline-first PWA resilience.",
   keywords: [
     "Garage Billing Software",
     "Motorcycle Workshop Software",
     "AI Voice Billing",
     "Digital Job Card",
-    "MechBillerAI",
+    "HybridStudioZ",
     "MotoBan",
+    "MotoFit 2",
     "Thermal POS Printing",
     "Offline PWA Garage",
     "Automotive Spares Inventory",

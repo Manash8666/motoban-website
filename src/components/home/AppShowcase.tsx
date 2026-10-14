@@ -7,30 +7,42 @@ import { ArrowUpRight } from "lucide-react";
 const works = [
   {
     image: "/assets/imgs/portfolio_1.jpg",
-    title: "Apex Superbike Bay",
-    category: "AI Voice Billing Deployment",
-    year: "© 2026",
+    title: "MotoFit 2 — Flagship Production Garage",
+    subtitle: "Nigam Nagar, Chandkheda, Ahmedabad",
+    category: "Full Version Live Deployment • HybridStudioZ Engine",
+    year: "Live in Production",
+    link: "https://motofit2.in",
+    isFlagship: true,
     colClass: "lg:col-span-5",
   },
   {
     image: "/assets/imgs/portfolio_2.jpg",
     title: "Patel MotoCare Spares Hub",
-    category: "50,000+ SKU Matrix & FIFO",
+    subtitle: "Ahmedabad, Gujarat",
+    category: "50,000+ SKU Matrix & FIFO Inventory",
     year: "© 2026",
+    link: "https://mechbillerai.vercel.app/",
+    isFlagship: false,
     colClass: "lg:col-span-7 lg:pt-16",
   },
   {
     image: "/assets/imgs/portfolio_3.jpg",
     title: "SpeedZone Dyno & Service Bay",
+    subtitle: "Pune, Maharashtra",
     category: "Digital Job Card Ramp Pipeline",
     year: "© 2026",
+    link: "https://mechbillerai.vercel.app/",
+    isFlagship: false,
     colClass: "lg:col-span-7",
   },
   {
     image: "/assets/imgs/portfolio_4.jpg",
     title: "Continental Workshop Network",
+    subtitle: "Multi-Location Network",
     category: "Offline PWA & Thermal POS Suite",
     year: "© 2026",
+    link: "https://mechbillerai.vercel.app/",
+    isFlagship: false,
     colClass: "lg:col-span-5 lg:pt-16",
   },
 ];
@@ -60,36 +72,57 @@ export default function AppShowcase() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
           {works.map((item, idx) => (
             <div key={idx} className={`${item.colClass} group`}>
-              <div className="relative rounded-3xl overflow-hidden bg-[#151D2F] border border-white/10 shadow-2xl aspect-[4/3]">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                
-                {/* Floating Corner Link Icon */}
-                <div className="absolute top-5 right-5 w-10 h-10 rounded-full bg-[#0B0F19]/80 border border-white/10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:bg-[#C9F31D] group-hover:text-[#0B0F19] transition-all duration-300">
-                  <ArrowUpRight className="w-4 h-4" />
-                </div>
-              </div>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="relative rounded-3xl overflow-hidden bg-[#151D2F] border border-white/10 shadow-2xl aspect-[4/3]">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                  
+                  {/* Flagship Production Partner Badge on MotoFit 2 */}
+                  {item.isFlagship && (
+                    <div className="absolute top-5 left-5 inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-[#0B0F19]/90 border border-[#C9F31D] backdrop-blur-md">
+                      <span className="w-2 h-2 rounded-full bg-[#C9F31D] animate-ping" />
+                      <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#C9F31D]">
+                        Flagship Partner • Full Version
+                      </span>
+                    </div>
+                  )}
 
-              {/* Geekfolio Content Meta Below Image (.cont mt-30 d-flex) */}
-              <div className="mt-6 flex items-start justify-between">
-                <div>
-                  <h3 className="font-syne font-bold text-xl text-white group-hover:text-[#C9F31D] transition-colors leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs font-mono uppercase text-[#C9F31D] mt-1">
-                    {item.category}
-                  </p>
+                  {/* Floating Corner Link Icon */}
+                  <div className="absolute top-5 right-5 w-10 h-10 rounded-full bg-[#0B0F19]/80 border border-white/10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 group-hover:bg-[#C9F31D] group-hover:text-[#0B0F19] transition-all duration-300">
+                    <ArrowUpRight className="w-4 h-4" />
+                  </div>
                 </div>
-                <span className="font-mono text-xs text-slate-400">
-                  {item.year}
-                </span>
-              </div>
+
+                {/* Geekfolio Content Meta Below Image (.cont mt-30 d-flex) */}
+                <div className="mt-6 flex items-start justify-between">
+                  <div>
+                    <h3 className="font-syne font-bold text-xl text-white group-hover:text-[#C9F31D] transition-colors leading-snug flex items-center space-x-2">
+                      <span>{item.title}</span>
+                      <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-[#C9F31D]" />
+                    </h3>
+                    <p className="text-xs font-mono uppercase text-[#C9F31D] mt-1">
+                      {item.category}
+                    </p>
+                    <p className="text-xs text-slate-400 font-sans mt-0.5">
+                      {item.subtitle}
+                    </p>
+                  </div>
+                  <span className="font-mono text-xs text-slate-400 shrink-0 ml-4">
+                    {item.year}
+                  </span>
+                </div>
+              </a>
             </div>
           ))}
         </div>

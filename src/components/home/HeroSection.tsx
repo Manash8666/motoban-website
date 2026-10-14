@@ -128,12 +128,29 @@ export default function HeroSection() {
             </div>
 
             {/* Trust badge */}
-            <div className="mt-10 flex items-center justify-center space-x-6 text-xs text-slate-400 font-mono">
+            <div className="mt-8 flex items-center justify-center space-x-6 text-xs text-slate-400 font-mono">
               <span>CLOUD SAAS</span>
               <span>•</span>
               <span className="text-[#C9F31D]">OFFLINE PWA</span>
               <span>•</span>
               <span>MOBILE COMPANION</span>
+            </div>
+
+            {/* Live Flagship Partner Pill */}
+            <div className="mt-6 inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-[#151D2F]/80 border border-[#C9F31D]/40 backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-[#C9F31D] animate-ping" />
+              <span className="text-xs text-slate-300 font-mono">
+                Full Version deployed at{" "}
+                <a
+                  href={SITE_CONFIG.flagshipPartner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C9F31D] font-bold hover:underline"
+                >
+                  {SITE_CONFIG.flagshipPartner.name}
+                </a>{" "}
+                ({SITE_CONFIG.flagshipPartner.location})
+              </span>
             </div>
           </div>
 
@@ -157,7 +174,7 @@ export default function HeroSection() {
                   Engine Architecture
                 </span>
                 <p className="font-syne font-bold text-xs text-white">
-                  15-Sec Voice Pipeline
+                  HybridStudioZ Core
                 </p>
               </div>
             </div>
@@ -175,7 +192,7 @@ export default function HeroSection() {
                     </defs>
                     <text className="font-syne font-bold uppercase tracking-widest text-[14px] fill-[#C9F31D]">
                       <textPath href="#textcircleHero" textLength="900">
-                        MOTOBAN • MECHBILLER AI • V1.0 LAUNCH •
+                        MOTOBAN • HYBRIDSTUDIOZ • V1.0 LAUNCH •
                       </textPath>
                     </text>
                   </svg>
@@ -194,7 +211,7 @@ export default function HeroSection() {
                   v1.0 Official Launch
                 </h6>
                 <p className="text-[11px] text-slate-400 mt-0.5">
-                  Newly unveiled. Powered by MechBillerAI.
+                  Newly unveiled. Powered by HybridStudioZ.
                 </p>
               </div>
             </div>

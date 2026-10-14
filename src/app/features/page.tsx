@@ -238,7 +238,7 @@ export default function FeaturesPage() {
               AI Voice & Natural Language Biller
             </h2>
             <p className="text-xs sm:text-sm text-slate-300">
-              Click any sample garage prompt below to simulate voice dictation and watch MechBillerAI parse items, HSN codes, and GST in real-time.
+              Click any sample garage prompt below to simulate voice dictation and watch HybridStudioZ parse items, HSN codes, and GST in real-time.
             </p>
           </div>
 

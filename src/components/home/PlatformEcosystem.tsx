@@ -28,7 +28,7 @@ export default function PlatformEcosystem() {
                     </defs>
                     <text className="font-syne font-bold uppercase tracking-widest text-[14px] fill-[#C9F31D]">
                       <textPath href="#textcircleAbout" textLength="900">
-                        WORKSHOP PRECISION • MECHBILLER AI • TRI-PLATFORM •
+                        WORKSHOP PRECISION • HYBRIDSTUDIOZ • TRI-PLATFORM •
                       </textPath>
                     </text>
                   </svg>

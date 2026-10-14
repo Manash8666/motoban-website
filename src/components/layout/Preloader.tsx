@@ -119,7 +119,7 @@ export default function Preloader() {
 
         <div className="mt-3 flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-slate-400">
           <span className="w-2 h-2 rounded-full bg-[#10B981] animate-ping" />
-          <span>MechBillerAI v1.0 Launch Edition</span>
+          <span>Powered by HybridStudioZ Engine</span>
         </div>
       </div>
     </div>

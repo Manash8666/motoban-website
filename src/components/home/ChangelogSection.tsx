@@ -13,12 +13,12 @@ const releases = [
     commit: "feat(web): launch official MotoBan website",
   },
   {
-    version: "v0.9.0 — App Release",
+    version: "v0.9.0 — Engine & App Release",
     date: "3 Days Ago",
-    title: "MechBillerAI Engine & Voice-to-Invoice App",
-    desc: "First live deployment of the MechBillerAI garage engine on Vercel (https://mechbillerai.vercel.app/). Built 15-second speech NLP parser and digital job card pipeline.",
-    tag: "App Release",
-    commit: "feat(app): initial release of mechbillerai billing engine",
+    title: "HybridStudioZ Engine & Voice-to-Invoice App",
+    desc: "First live deployment of the HybridStudioZ garage engine (deployed at https://mechbillerai.vercel.app/). Built 15-second speech NLP parser, full digital job cards, and onboarded flagship partner MotoFit 2 (Nigam Nagar, Chandkheda, Ahmedabad) on the Full Version.",
+    tag: "Engine & App",
+    commit: "feat(engine): launch hybridstudioz garage billing engine",
   },
   {
     version: "v0.8.0 — Core Architecture",
