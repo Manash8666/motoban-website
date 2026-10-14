@@ -1,26 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import {
   Mic,
   Laptop,
   Smartphone,
   Cloud,
   Play,
-  CheckCircle2,
-  Sparkles,
   Printer,
   Scan,
   Monitor,
   Tablet,
-  ArrowRight,
-  ExternalLink,
-  Shield,
-  Clock,
-  Layers,
-  Wrench,
-  Check,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -328,8 +318,8 @@ export default function FeaturesPage() {
 
               {/* Table */}
               <div className="space-y-2 pb-4 border-b border-white/10">
-                {selectedPrompt.items.map((item, idx) => (
-                  <div key={idx} className="flex justify-between items-center text-[11px] py-1">
+                {selectedPrompt.items.map((item) => (
+                  <div key={item.name} className="flex justify-between items-center text-[11px] py-1">
                     <div>
                       <span className="text-white font-medium block">{item.name}</span>
                       <span className="text-[10px] text-slate-400">HSN/SAC: {item.hsn} • Qty: {item.qty || 1}</span>

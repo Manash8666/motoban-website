@@ -10,9 +10,6 @@ import {
   ExternalLink,
   Copy,
   Check,
-  Code2,
-  FileText,
-  ShieldAlert,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -29,7 +26,7 @@ export default function DocsPage() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
 
   const copyToClipboard = (text: string, id: string) => {
-    navigator.clipboard.writeText(text);
+    void navigator.clipboard.writeText(text);
     setCopiedCode(id);
     setTimeout(() => setCopiedCode(null), 2000);
   };
@@ -124,8 +121,7 @@ export default function DocsPage() {
                   className="text-[#C9F31D] font-mono underline"
                 >
                   {SITE_CONFIG.demoUrl}
-                </a>
-                . The sandbox comes preloaded with 200+ popular motorcycle parts and sample job cards.
+                </a>. The sandbox comes preloaded with 200+ popular motorcycle parts and sample job cards.
               </p>
 
               <div className="space-y-4">
@@ -323,9 +319,9 @@ NEXT_PUBLIC_ENABLE_OFFLINE_SYNC=true`}
                   { key: "Alt + W", action: "Send Bill & UPI Link via WhatsApp" },
                   { key: "F9", action: "Save Invoice & Mark Delivered" },
                   { key: "Esc", action: "Close Modal / Cancel Prompt" },
-                ].map((item, idx) => (
+                ].map((item) => (
                   <div
-                    key={idx}
+                    key={item.key}
                     className="p-3.5 rounded-xl bg-[#151D2F] border border-white/5 flex items-center justify-between font-mono text-xs"
                   >
                     <span className="text-slate-300">{item.action}</span>

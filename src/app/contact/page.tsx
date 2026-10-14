@@ -6,10 +6,8 @@ import {
   MessageSquare,
   MapPin,
   ExternalLink,
-  Sparkles,
   Send,
   CheckCircle2,
-  Clock,
   ShieldCheck,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
@@ -32,14 +30,20 @@ export default function ContactPage() {
     setSubmitted(true);
 
     // Build pre-filled WhatsApp message
-    const msg = `Hi Manash, I want to book a MotoBan demo for my garage:
-- Workshop: ${formData.workshopName}
-- Owner: ${formData.ownerName}
-- Phone: ${formData.phone}
-- Vehicles: ${formData.vehicleType}
-- Mechanics: ${formData.mechanicCount}
-- Preferred Time: ${formData.preferredTime}
-${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
+    const notesPart = formData.notes ? `- Notes: ${formData.notes}` : "";
+    const lines = [
+      "Hi Manash, I want to book a MotoBan demo for my garage:",
+      `- Workshop: ${formData.workshopName}`,
+      `- Owner: ${formData.ownerName}`,
+      `- Phone: ${formData.phone}`,
+      `- Vehicles: ${formData.vehicleType}`,
+      `- Mechanics: ${formData.mechanicCount}`,
+      `- Preferred Time: ${formData.preferredTime}`,
+    ];
+    if (notesPart) {
+      lines.push(notesPart);
+    }
+    const msg = lines.join("\n");
 
     const url = `https://wa.me/916359635416?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
@@ -182,10 +186,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                      <label htmlFor="workshopName" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                         Workshop Name *
                       </label>
                       <input
+                        id="workshopName"
                         type="text"
                         required
                         placeholder="e.g. SpeedZone Two-Wheeler Works"
@@ -196,10 +201,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
                     </div>
 
                     <div>
-                      <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                      <label htmlFor="ownerName" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                         Owner / Manager Name *
                       </label>
                       <input
+                        id="ownerName"
                         type="text"
                         required
                         placeholder="e.g. Ramesh Patel"
@@ -212,10 +218,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                      <label htmlFor="phone" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                         WhatsApp / Phone Number *
                       </label>
                       <input
+                        id="phone"
                         type="tel"
                         required
                         placeholder="e.g. +91 98765 43210"
@@ -226,10 +233,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
                     </div>
 
                     <div>
-                      <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                      <label htmlFor="vehicleType" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                         Vehicles Serviced
                       </label>
                       <select
+                        id="vehicleType"
                         value={formData.vehicleType}
                         onChange={(e) => setFormData({ ...formData, vehicleType: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-[#151D2F] border border-white/10 text-white text-xs focus:outline-none focus:border-[#C9F31D] transition-colors"
@@ -244,10 +252,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                      <label htmlFor="mechanicCount" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                         Number of Mechanics / Bays
                       </label>
                       <select
+                        id="mechanicCount"
                         value={formData.mechanicCount}
                         onChange={(e) => setFormData({ ...formData, mechanicCount: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-[#151D2F] border border-white/10 text-white text-xs focus:outline-none focus:border-[#C9F31D] transition-colors"
@@ -259,10 +268,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
                     </div>
 
                     <div>
-                      <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                      <label htmlFor="preferredTime" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                         Preferred Demo Slot
                       </label>
                       <select
+                        id="preferredTime"
                         value={formData.preferredTime}
                         onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl bg-[#151D2F] border border-white/10 text-white text-xs focus:outline-none focus:border-[#C9F31D] transition-colors"
@@ -275,10 +285,11 @@ ${formData.notes ? `- Notes: ${formData.notes}` : ""}`;
                   </div>
 
                   <div>
-                    <label className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
+                    <label htmlFor="notes" className="block text-xs font-syne uppercase tracking-wider text-slate-300 mb-1.5">
                       Additional Notes or Existing Software
                     </label>
                     <textarea
+                      id="notes"
                       rows={3}
                       placeholder="e.g. Currently using manual job cards and paper bills, need help with TVS thermal printer setup."
                       value={formData.notes}
