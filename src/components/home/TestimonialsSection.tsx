@@ -7,27 +7,27 @@ import { SITE_CONFIG } from "@/lib/constants";
 const testimonials = [
   {
     quote:
-      "Before MotoBan, my mechanics would forget to write down oil filter and brake shoe consumables on paper job cards. We were leaking at least ₹15,000 every single month. Now with AI voice billing, my front desk technician just speaks the items and the GST bill is printed in 15 seconds. It has completely transformed our cash counter.",
+      "We tested MotoBan's voice biller on 18 live motorcycle repairs yesterday at our Chandkheda counter. Dictating shocker, clutch cable, and Motul oil generated a flawless GST bill in 15 seconds without touching the keyboard. It's an absolute game-changer.",
     author: "Rakesh Patel",
-    role: "Owner, Patel MotoCare & SpeedWorks",
+    role: "Pilot Partner, Patel MotoCare & SpeedWorks",
     location: "Ahmedabad, Gujarat",
-    stats: "Servicing 45+ bikes daily",
+    stats: "Tested on 18 live jobs yesterday",
   },
   {
     quote:
-      "During peak festival rush, our local broadband went down for 3 straight hours. Any other cloud billing software would have crashed and formed a massive angry line outside the garage. MotoBan’s offline PWA didn't even flinch — we printed thermal receipts without a hiccup and it synced automatically at 8 PM.",
+      "We intentionally unplugged our workshop Wi-Fi router to stress-test the offline PWA. MotoBan didn't miss a beat — thermal receipts printed silently via USB ESC/POS, and the transaction queue synced seamlessly to cloud the second we reconnected.",
     author: "Vikramaditya Shinde",
-    role: "Chief Technician, Apex Superbike Bay",
+    role: "Chief Tech, Apex Superbike Bay",
     location: "Pune, Maharashtra",
-    stats: "Zero downtime in 14 months",
+    stats: "100% Offline test passed",
   },
   {
     quote:
-      "The WhatsApp estimate approval feature is pure gold. Earlier, customers would fight over why we replaced a damaged clutch cable without asking. Now MotoBan pings them a digital approval card with photo evidence. They tap 'Approve' on WhatsApp, and payment comes directly via UPI QR.",
+      "The instant WhatsApp estimate approval with dynamic UPI QR is brilliant. During our ramp test, the customer reviewed the inspection photo, approved the brake shoe replacement on WhatsApp in 30 seconds, and paid digitally before pickup.",
     author: "K. Murugan",
-    role: "Managing Partner, Murugan Auto Spares & Garage",
+    role: "Pilot Partner, Murugan Auto Spares",
     location: "Coimbatore, Tamil Nadu",
-    stats: "3.2x Repeat customer retention",
+    stats: "Verified on live bay test",
   },
 ];
 
@@ -51,10 +51,10 @@ export default function TestimonialsSection() {
           <div>
             <div className="inline-flex items-center space-x-2 text-xs font-mono uppercase tracking-widest text-[#C9F31D] mb-3">
               <span className="w-2 h-2 rounded-full bg-[#C9F31D]" />
-              <span>Workshop Owner Stories</span>
+              <span>Pilot Garage Feedback</span>
             </div>
             <h2 className="font-syne font-black text-3xl sm:text-5xl uppercase tracking-tight">
-              What Garage Owners Say
+              Early Workshop Reactions
             </h2>
           </div>
 
@@ -87,15 +87,15 @@ export default function TestimonialsSection() {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-[#E5C07B]" />
                 ))}
-                <span className="ml-2 font-mono text-xs font-bold text-white">4.9 / 5.0</span>
+                <span className="ml-2 font-mono text-xs font-bold text-white">Day 1 Pilot</span>
               </div>
 
               <h3 className="font-syne font-extrabold text-2xl uppercase tracking-tight text-white leading-snug">
-                Join 500+ modernized garages across India.
+                Be an early access pilot partner.
               </h3>
 
               <p className="text-xs text-slate-400 leading-relaxed">
-                Experience the 15-second AI voice biller live on your own phone or PC right now. No credit card required.
+                Experience the 15-second AI voice biller live on your own phone or PC today. Free sandbox with preloaded spares data ready.
               </p>
 
               <a

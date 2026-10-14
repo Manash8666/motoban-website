@@ -104,10 +104,10 @@ export default function HorizontalScrollContainer() {
 
               <div className="space-y-1">
                 <span className="font-syne font-black text-5xl sm:text-6xl lg:text-7xl text-[#E5C07B] block">
-                  3.2x
+                  0ms
                 </span>
-                <h6 className="font-syne font-bold text-sm uppercase text-white">Repeat Retention</h6>
-                <p className="text-[11px] text-slate-400">Via WhatsApp KM alerts</p>
+                <h6 className="font-syne font-bold text-sm uppercase text-white">Local Latency</h6>
+                <p className="text-[11px] text-slate-400">Instant IndexedDB memory reads</p>
               </div>
             </div>
 
@@ -135,10 +135,10 @@ export default function HorizontalScrollContainer() {
 
                 {/* Experience Box (cloning Geekfolio exp-box) */}
                 <div className="p-4 rounded-2xl bg-[#151D2F] border border-white/10 inline-flex items-center space-x-4">
-                  <span className="font-syne font-black text-4xl text-[#E5C07B]">500+</span>
+                  <span className="font-syne font-black text-3xl text-[#E5C07B]">Day 1</span>
                   <div className="text-xs">
-                    <span className="font-bold text-white block">Workshops Active</span>
-                    <span className="text-slate-400">Across Gujarat & Maharashtra</span>
+                    <span className="font-bold text-white block">Official Launch</span>
+                    <span className="text-slate-400">Engineered in Chandkheda, Ahmedabad</span>
                   </div>
                 </div>
               </div>

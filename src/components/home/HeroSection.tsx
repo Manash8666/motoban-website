@@ -175,7 +175,7 @@ export default function HeroSection() {
                     </defs>
                     <text className="font-syne font-bold uppercase tracking-widest text-[14px] fill-[#C9F31D]">
                       <textPath href="#textcircleHero" textLength="900">
-                        MOTOBAN • MECHBILLER AI • WINNER •
+                        MOTOBAN • MECHBILLER AI • V1.0 LAUNCH •
                       </textPath>
                     </text>
                   </svg>
@@ -191,10 +191,10 @@ export default function HeroSection() {
 
               <div>
                 <h6 className="font-syne font-bold text-xs uppercase text-white tracking-wider">
-                  500+ Workshops
+                  v1.0 Official Launch
                 </h6>
                 <p className="text-[11px] text-slate-400 mt-0.5">
-                  Avg rating 4.9 makes us workshop favorite.
+                  Newly unveiled. Powered by MechBillerAI.
                 </p>
               </div>
             </div>
