@@ -78,7 +78,7 @@ Subtle border token for glassmorphic elevation without solid harsh white borders
 | **Success / Paid** | Emerald Sync | `#10B981` | `16, 185, 129` | `160°, 84%, 39%` | Paid invoices, printer ready, WhatsApp delivered |
 | **Warning / Pending**| Amber Alert | `#F59E0B` | `245, 158, 11` | `38°, 92%, 50%` | Due payments, low spare inventory (<3 units) |
 | **Critical / Voided** | Crimson Brake | `#EF4444` | `239, 68, 68` | `0°, 84%, 60%` | Voided bill, printer paper jam, battery dead |
-| **Lifetime Tier** | Royal Gold | `#E5C07B` | `229, 192, 123`| `39°, 67%, 69%` | ₹6,999 Lifetime License badge, VIP Partner crest |
+| **Lifetime Tier** | Royal Gold | `#E5C07B` | `229, 192, 123`| `39°, 67%, 69%` | ₹15,999 Lifetime License badge, VIP Partner crest |
 
 ---
 

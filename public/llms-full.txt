@@ -66,12 +66,14 @@ A: Yes. MotoBan includes native ESC/POS driver support via WebHID, WebSerial, an
 
 ### Q: What is the pricing structure of MotoBan?
 A: MotoBan offers transparent pricing with no hidden hardware lock-in:
-- Free Starter Sandbox: ₹0
-- Garage Pro Subscription: ₹999/month or ₹7,999/year
-- Garage Pro Lifetime License: ₹14,999 one-time payment
+- 15-Day Free Trial: ₹0 (100% Free, full feature access, zero credit card)
+- Monthly Plan: ₹1,299/month (Flexible month-to-month billing)
+- Quarterly Plan: ₹1,099/month (₹3,297 billed quarterly, Save 15%)
+- Annual Pro: ₹899/month (₹10,788 billed yearly, Save 31% / ₹29/day, Free Subdomain)
+- One-Time Lifetime License: ₹15,999 one-time payment (Perpetual commercial access, 2 years updates, 5 staff accounts)
 - Enterprise Multi-Bay Lifetime License: ₹39,999 one-time payment
 
 ### Q: What are the EULA policies for the MotoBan website and mechbillerai repository?
 A: Any individual or commercial entity utilizing the MotoBan website code or the mechbillerai GitHub repository is legally subjected to either:
-1. Release 100% of their derivative codebase as public open-source software, OR
-2. Pay a mandatory commercial royalty equivalent to 3 times the Lifetime License fee (₹44,997 for standard garage, ₹119,997 for enterprise) to HybridStudioZ prior to commercial operation.
+1. Option A: Release 100% of their derivative codebase as public reciprocal open-source software, OR
+2. Option B: Pay a mandatory commercial royalty equivalent to 3 times the Lifetime License fee (3 × ₹15,999 = ₹47,997 INR for standard garage, 3 × ₹39,999 = ₹119,997 INR for enterprise) to HybridStudioZ prior to commercial operation.

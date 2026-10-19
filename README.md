@@ -138,7 +138,7 @@ If you or your organization are using the **MotoBan Website** or the **[`mechbil
 
 1. **Option A (100% Reciprocal Open-Source):** Release **100% of your resulting project, platform, codebase, and derivative works as free and public open-source software** under identical terms with all source code publicly accessible, **OR**
 2. **Option B (3x Lifetime License Commercial Royalty):** Pay a mandatory Royalty that is **3 times (3x) the Lifetime License** of the MotoBan App and Website directly to HybridStudioZ prior to commercial launch or closed-source deployment:
-   - **Standard Workshop Commercial Royalty:** `3 × ₹14,999 = ₹44,997 INR`
+   - **Standard Workshop Commercial Royalty:** `3 × ₹15,999 = ₹47,997 INR`
    - **Enterprise Multi-Bay Commercial Royalty:** `3 × ₹39,999 = ₹119,997 INR`
 
 - 📄 **View Full Markdown EULA:** [`EULA.md`](./EULA.md)

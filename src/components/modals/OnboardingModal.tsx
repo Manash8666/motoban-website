@@ -21,13 +21,16 @@ interface OnboardingModalProps {
   isOpen: boolean;
   onClose: () => void;
   defaultPlan?: string;
+  initialPlan?: string;
 }
 
 export default function OnboardingModal({
   isOpen,
   onClose,
-  defaultPlan = "Garage Pro",
+  defaultPlan = "Annual Pro",
+  initialPlan,
 }: OnboardingModalProps) {
+  const activePlan = initialPlan || defaultPlan;
   const [step, setStep] = useState<1 | 2 | 3>(1);
   const [garageName, setGarageName] = useState("");
   const [ownerName, setOwnerName] = useState("");
@@ -53,7 +56,7 @@ export default function OnboardingModal({
           city: city || "India",
           workshopType: specialty,
           dailyVehicles,
-          selectedPlan: defaultPlan,
+          selectedPlan: activePlan,
         }),
       });
 
@@ -145,7 +148,7 @@ export default function OnboardingModal({
             <div>
               <h3 className="text-xl font-syne font-bold text-white">Let&apos;s Set Up Your Garage Profile</h3>
               <p className="text-xs text-gray-400 mt-1">
-                Selected Tier: <span className="text-[#C9F31D] font-mono font-bold">{defaultPlan}</span>
+                Selected Tier: <span className="text-[#C9F31D] font-mono font-bold">{activePlan}</span>
               </p>
             </div>
 
@@ -160,6 +163,12 @@ export default function OnboardingModal({
                   onChange={(e) => setGarageName(e.target.value)}
                   className="w-full px-3.5 py-2.5 rounded-xl bg-black/40 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-[#C9F31D]"
                 />
+                {garageName.trim() && (
+                  <div className="mt-1.5 flex items-center gap-1.5 text-[11px] font-mono text-[#10B981]">
+                    <Sparkles className="w-3 h-3 text-[#10B981]" />
+                    <span>Your Free Subdomain: <strong>{garageName.toLowerCase().replace(/[^a-z0-9]/g, "") || "garage"}.motoban.in</strong></span>
+                  </div>
+                )}
               </div>
 
               <div className="grid grid-cols-2 gap-3">

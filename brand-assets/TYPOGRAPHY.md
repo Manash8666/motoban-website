@@ -90,7 +90,7 @@ In billing terminals and customer invoices, digits must never shift width when i
    - Grouping must follow the Indian Numbering System: Thousands, then Lakhs, then Crores (`₹12,45,800.00`).
 3. **Decimals:**
    - Display `.00` in thermal receipts for accounting clarity.
-   - For marketing headers, drop decimals (`₹6,999`, not `₹6,999.00`).
+   - For marketing headers, drop decimals (`₹15,999`, not `₹15,999.00`).
 
 ---
 

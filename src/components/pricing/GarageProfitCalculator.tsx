@@ -191,11 +191,11 @@ export default function GarageProfitCalculator() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-xs text-white">
                   <Check className="w-4 h-4 text-[#C9F31D]" />
-                  <span>MotoBan Pro costs just <strong className="text-[#C9F31D]">₹999/mo</strong></span>
+                  <span>MotoBan Annual Pro costs just <strong className="text-[#C9F31D]">₹{SITE_CONFIG.pricing.yearlyEffective}/mo</strong> (₹29/day)</span>
                 </div>
                 <div className="flex items-center space-x-2 text-xs text-white">
                   <TrendingUp className="w-4 h-4 text-[#C9F31D]" />
-                  <span>Estimated ROI: <strong className="text-[#C9F31D]">{Math.round((totalMonthlyLoss / 999) * 100)}% return in Month 1</strong></span>
+                  <span>Estimated ROI: <strong className="text-[#C9F31D]">{Math.round((totalMonthlyLoss / SITE_CONFIG.pricing.yearlyEffective) * 100)}% return in Month 1</strong></span>
                 </div>
               </div>
 

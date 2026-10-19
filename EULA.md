@@ -48,7 +48,7 @@ You must release **100% of your resulting project, platform, codebase, and deriv
 
 ### Option B: 3x Lifetime License Commercial Royalty Payment
 If you elect **not** to 100% open-source your project, or if your application, platform, website, or product is proprietary, closed-source, commercially distributed, hosted as a paid service, or monetized for commercial gain, you are legally subjected to **pay a mandatory Royalty equivalent to exactly three times (3x) the Lifetime License fee of the MotoBan App and Website** directly to **HybridStudioZ** prior to commercial launch or production operation:
-- **Standard Workshop Commercial Royalty:** `3 × ₹14,999 = ₹44,997 INR` (or international equivalent at invoice date)
+- **Standard Workshop Commercial Royalty:** `3 × ₹15,999 = ₹47,997 INR` (or international equivalent at invoice date)
 - **Enterprise / Multi-Bay Commercial Royalty:** `3 × ₹39,999 = ₹119,997 INR` (or international equivalent at invoice date)
 
 Failure to either 100% open-source your derivative work or pre-pay the mandatory 3x Lifetime License Royalty constitutes willful copyright infringement, commercial misappropriation, and breach of contract under the Indian Copyright Act, 1957 and international copyright conventions. HybridStudioZ reserves the right to seek statutory damages, injunctive relief, retroactive royalty claims, and full recovery of legal costs.

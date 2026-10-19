@@ -501,13 +501,18 @@ export default function FeaturesPage() {
             <tbody className="divide-y divide-white/5">
               {[
                 { metric: "Billing Speed", motoban: "15 Seconds (AI Voice NLP)", legacy: "3 - 5 Minutes (Manual Typing)", paper: "8 - 10 Minutes (Handwritten)" },
+                { metric: "Scope of Work (SOW)", motoban: "Gemini AI Auto-Drafted Explanations", legacy: "Not Supported (Only bare part numbers)", paper: "Scribbled notes on paper" },
+                { metric: "Custom Subdomain", motoban: "Free Branded (*.motoban.in)", legacy: "No web presence", paper: "None" },
+                { metric: "Standee UPI QR Sync", motoban: "Upload Real GPay/PhonePe Standee", legacy: "Static cash receipt or manual POS", paper: "Laminated standee on desk only" },
+                { metric: "Data Migration", motoban: "1-Click Vyapar / Excel / CSV Importer", legacy: "Manual re-entry line by line", paper: "Hundreds of ledger books" },
+                { metric: "Mobile Companion", motoban: "Android v1.0.0 APK & AAB Companion", legacy: "Desktop tower locked to cashier", paper: "Clipboard on mechanic ramp" },
                 { metric: "Offline Resilience", motoban: "100% Offline (IndexedDB PWA)", legacy: "Local Desktop Only (No Sync)", paper: "100% Offline (Prone to Loss)" },
                 { metric: "WhatsApp Estimates & Bill", motoban: "1-Click Direct with UPI QR", legacy: "Paid SMS Add-On or Manual", paper: "None / Physical Handover" },
                 { metric: "Indian Spares Parts Database", motoban: "50,000+ Preloaded BS3/BS4/BS6", legacy: "Empty (Manual Entry Required)", paper: "Physical Book Catalogs" },
                 { metric: "Thermal Receipt Printing", motoban: "Silent WebHID / WebSerial (58/80mm)", legacy: "Proprietary Windows Driver", paper: "Carbon Copy Sheets" },
                 { metric: "Inspection Damage Photos", motoban: "4-Angle Smartphone Capture", legacy: "Not Supported", paper: "Hand-Drawn Sketches" },
                 { metric: "Hardware Investment", motoban: "Zero (Runs on Existing Phone/PC)", legacy: "₹25,000+ Dedicated Windows PC", paper: "Printed Carbon Pad Registers" },
-                { metric: "Pricing & License", motoban: "Free Sandbox / ₹999/mo / ₹14,999 Lifetime", legacy: "₹18,000 - ₹35,000 + Annual AMC", paper: "₹2,500/month recurring printing" },
+                { metric: "Pricing & License", motoban: "15-Day Free Trial / ₹1,299/mo / ₹15,999 Lifetime", legacy: "₹18,000 - ₹35,000 + Annual AMC", paper: "₹2,500/month recurring printing" },
               ].map((row, i) => (
                 <tr key={i} className="hover:bg-white/[0.02] transition-colors">
                   <td className="py-3.5 px-6 font-sans font-medium text-white">{row.metric}</td>

@@ -269,7 +269,7 @@ export default function LivePosSandbox() {
   const [selectedVoice, setSelectedVoice] = useState<VoicePreset>(VOICE_PRESETS[0]);
   const [items, setItems] = useState<BillItem[]>(VOICE_PRESETS[0].items);
   const [isAiProcessing, setIsAiProcessing] = useState(false);
-  const [previewMode, setPreviewMode] = useState<"thermal" | "gst" | "jobcard">("thermal");
+  const [previewMode, setPreviewMode] = useState<"thermal" | "gst" | "sow" | "jobcard">("thermal");
   const [copiedInvoiceNumber, setCopiedInvoiceNumber] = useState(false);
 
   // Compute Invoice Financials
@@ -568,42 +568,54 @@ export default function LivePosSandbox() {
         <div className="lg:col-span-5 flex flex-col justify-between">
           
           {/* Format Switcher Tab Pills */}
-          <div className="bg-[#090D16] p-1.5 rounded-2xl border border-white/10 flex items-center gap-1 mb-4">
+          <div className="bg-[#090D16] p-1.5 rounded-2xl border border-white/10 flex items-center gap-1 mb-4 overflow-x-auto">
             <button
               type="button"
               onClick={() => setPreviewMode("thermal")}
-              className={`flex-1 py-2 px-2.5 rounded-xl text-xs font-mono font-bold flex items-center justify-center gap-1.5 transition-all ${
+              className={`flex-1 py-2 px-2 rounded-xl text-[11px] font-mono font-bold flex items-center justify-center gap-1 transition-all whitespace-nowrap ${
                 previewMode === "thermal"
                   ? "bg-[#C9F31D] text-[#0B0F19] shadow-md shadow-[#C9F31D]/20"
                   : "text-gray-400 hover:text-white hover:bg-white/5"
               }`}
             >
               <Printer className="w-3.5 h-3.5" />
-              80mm Thermal
+              Thermal
             </button>
             <button
               type="button"
               onClick={() => setPreviewMode("gst")}
-              className={`flex-1 py-2 px-2.5 rounded-xl text-xs font-mono font-bold flex items-center justify-center gap-1.5 transition-all ${
+              className={`flex-1 py-2 px-2 rounded-xl text-[11px] font-mono font-bold flex items-center justify-center gap-1 transition-all whitespace-nowrap ${
                 previewMode === "gst"
                   ? "bg-[#C9F31D] text-[#0B0F19] shadow-md shadow-[#C9F31D]/20"
                   : "text-gray-400 hover:text-white hover:bg-white/5"
               }`}
             >
               <FileText className="w-3.5 h-3.5" />
-              A4 GST Bill
+              GST Bill
+            </button>
+            <button
+              type="button"
+              onClick={() => setPreviewMode("sow")}
+              className={`flex-1 py-2 px-2 rounded-xl text-[11px] font-mono font-bold flex items-center justify-center gap-1 transition-all whitespace-nowrap ${
+                previewMode === "sow"
+                  ? "bg-[#C9F31D] text-[#0B0F19] shadow-md shadow-[#C9F31D]/20"
+                  : "text-gray-400 hover:text-white hover:bg-white/5"
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 text-blue-400" />
+              SOW (Gemini AI)
             </button>
             <button
               type="button"
               onClick={() => setPreviewMode("jobcard")}
-              className={`flex-1 py-2 px-2.5 rounded-xl text-xs font-mono font-bold flex items-center justify-center gap-1.5 transition-all ${
+              className={`flex-1 py-2 px-2 rounded-xl text-[11px] font-mono font-bold flex items-center justify-center gap-1 transition-all whitespace-nowrap ${
                 previewMode === "jobcard"
                   ? "bg-[#C9F31D] text-[#0B0F19] shadow-md shadow-[#C9F31D]/20"
                   : "text-gray-400 hover:text-white hover:bg-white/5"
               }`}
             >
               <ShieldCheck className="w-3.5 h-3.5" />
-              Digital Job Card
+              Job Card
             </button>
           </div>
 
@@ -750,7 +762,66 @@ export default function LivePosSandbox() {
               </div>
             )}
 
-            {/* VIEW 3: Digital Job Card Mode */}
+            {/* VIEW 3: Scope of Work (SOW) & Gemini AI Explanations */}
+            {previewMode === "sow" && (
+              <div className="font-sans text-[11px] text-gray-300 space-y-3">
+                <div className="flex items-start justify-between border-b border-white/10 pb-2">
+                  <div>
+                    <div className="flex items-center gap-1.5">
+                      <Sparkles className="w-4 h-4 text-blue-400" />
+                      <h4 className="font-syne font-bold text-sm text-white">SCOPE OF WORK (SOW) ESTIMATE</h4>
+                    </div>
+                    <p className="text-[10px] text-blue-300 font-mono">Gemini AI Auto-Drafted Explanations</p>
+                    <p className="text-[11px] font-bold text-[#C9F31D] mt-0.5">motofit2.motoban.in</p>
+                  </div>
+                  <div className="text-right text-[10px] font-mono">
+                    <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-[9px] font-bold">
+                      TRANSPARENT SOW
+                    </span>
+                    <p className="text-gray-400 mt-1">Ref: SOW-2026-902</p>
+                  </div>
+                </div>
+
+                {/* SOW Line Items with AI Technical Justifications */}
+                <div className="space-y-2 max-h-[220px] overflow-y-auto pr-1">
+                  {items.map((it, idx) => (
+                    <div key={idx} className="p-2.5 rounded-xl bg-black/40 border border-white/10 space-y-1">
+                      <div className="flex justify-between items-center text-xs font-medium">
+                        <span className="text-white font-bold">{it.name}</span>
+                        <span className="text-[#C9F31D] font-mono font-bold">₹{it.rate * it.qty}</span>
+                      </div>
+                      <div className="text-[10px] text-blue-200/90 bg-blue-950/40 p-1.5 rounded-lg border border-blue-500/20 flex items-start gap-1.5">
+                        <span className="text-blue-400 font-bold shrink-0">AI Why:</span>
+                        <span>
+                          {it.name.toLowerCase().includes("oil")
+                            ? "Flushes acidic breakdown varnish and carbon deposits; protects camshaft journals and piston skirts."
+                            : it.name.toLowerCase().includes("brake") || it.name.toLowerCase().includes("pad")
+                            ? "Friction material below 2mm safety threshold; restores factory stopping distance and prevents disc gouging."
+                            : it.name.toLowerCase().includes("plug")
+                            ? "Electrode gap eroded by 0.35mm; cures cold-start misfires and restores stoichiometric fuel burn."
+                            : it.name.toLowerCase().includes("labor") || it.name.toLowerCase().includes("service")
+                            ? "Comprehensive 24-point chassis tightening, electrical contact cleaning, and torque inspection."
+                            : "Prevents mechanical binding, reduces parasitic drag, and restores factory throttle response."}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-2 border-t border-white/10 flex justify-between items-center font-mono">
+                  <div>
+                    <span className="text-[10px] text-gray-500 block">ESTIMATED TOTAL</span>
+                    <span className="text-lg font-bold text-[#C9F31D]">₹{grandTotal.toLocaleString("en-IN")}</span>
+                  </div>
+                  <div className="text-right text-[10px] text-slate-400">
+                    <span className="text-emerald-400 font-mono font-bold">✓ Zero Surprise Work Guarantee</span>
+                    <p className="text-[9px] text-slate-500">Auto-synced to Customer WhatsApp</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* VIEW 4: Digital Job Card Mode */}
             {previewMode === "jobcard" && (
               <div className="font-sans text-[11px] text-gray-300 space-y-3">
                 <div className="flex items-center justify-between border-b border-white/10 pb-2">

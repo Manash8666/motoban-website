@@ -24,7 +24,7 @@ export default function JsonLdSchema() {
         "offers": [
           {
             "@type": "Offer",
-            "name": "Free Starter Sandbox",
+            "name": "15-Day Free Trial",
             "price": "0",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
@@ -32,16 +32,32 @@ export default function JsonLdSchema() {
           },
           {
             "@type": "Offer",
-            "name": "Garage Pro Monthly",
-            "price": "999",
+            "name": "Monthly Plan",
+            "price": "1299",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
             "url": "https://motoban.in/pricing",
           },
           {
             "@type": "Offer",
-            "name": "Garage Pro Lifetime",
-            "price": "14999",
+            "name": "Quarterly Plan",
+            "price": "3297",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://motoban.in/pricing",
+          },
+          {
+            "@type": "Offer",
+            "name": "Annual Pro",
+            "price": "10788",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://motoban.in/pricing",
+          },
+          {
+            "@type": "Offer",
+            "name": "One-Time Lifetime License",
+            "price": "15999",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
             "url": "https://motoban.in/pricing",
@@ -56,6 +72,11 @@ export default function JsonLdSchema() {
         },
         "featureList": [
           "15-Second AI Voice Dictation Billing",
+          "Gemini AI Scope of Work (SOW) Technical Explanations",
+          "Personal Counter Standee UPI QR Integration on Invoices",
+          "Free Branded Subdomains (*.motoban.in) with Live Customer Bay Tracking",
+          "Universal 1-Click Data Importer (Vyapar, Excel, CSV)",
+          "Native Android Mobile Companion App (v1.0.0 APK & AAB)",
           "Digital Job Cards with Check-In Scratch Photos",
           "50,000+ Preloaded BS3/BS4/BS6 Spares Matrix",
           "WhatsApp Customer Invoice Dispatch with Direct UPI QR",
@@ -162,7 +183,7 @@ export default function JsonLdSchema() {
             "acceptedAnswer": {
               "@type": "Answer",
               "text":
-                "MotoBan offers a Free Sandbox Tier (₹0), Garage Pro Monthly at ₹999/month (or ₹7,999/year), and a Garage Pro Lifetime License at a flat one-time payment of ₹14,999 with zero recurring fees.",
+                "MotoBan offers an unrestricted 15-Day Free Trial (₹0), Monthly Plan at ₹1,299/month, Quarterly Plan at ₹1,099/month (₹3,297 billed quarterly), Annual Pro at ₹899/month (₹10,788 billed yearly with free subdomain), and a One-Time Lifetime License at ₹15,999 with perpetual commercial access and zero recurring fees.",
             },
           },
           {

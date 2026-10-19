@@ -1,39 +1,46 @@
-# MotoBan (MechBillerAI) — AI Garage Billing & Workshop Operating System
+# MotoBan (MechBillerAI v1.0.0) — AI Garage Billing & Workshop Operating System
 
-> MotoBan (powered by the MechBillerAI engine from HybridStudioZ) is India's leading AI-native garage management software, digital job card maker, and auto spare parts POS system.
+> MotoBan (powered by the MechBillerAI engine from HybridStudioZ) is India's leading AI-native garage management software, digital job card maker, Scope of Work (SOW) bill generator, and auto spare parts POS system.
 
 ## Executive Summary
 MotoBan replaces paper job cards, handwritten bill registers, and slow desktop billing systems with a high-speed, voice-enabled operating system designed specifically for two-wheeler, motorcycle, scooter, and multi-brand automotive workshops across India.
 
 - **Product Name:** MotoBan (MechBillerAI)
+- **Current Release:** Version 1.0.0 (Web SaaS & React Native Android APK/AAB)
 - **Engine Developer:** HybridStudioZ
 - **Founding / Headquarters:** Chandkheda, Ahmedabad, Gujarat, India - 382424
 - **Official Website:** https://motoban.in
 - **Live Interactive App Engine:** https://mechbillerai.vercel.app/
-- **GitHub Repository:** https://github.com/Manash8666/mechbillerai.git
+- **GitHub Repository (Engine):** https://github.com/Manash8666/mechbillerai.git
+- **GitHub Repository (Website):** https://github.com/Manash8666/motoban-website.git
 - **Support & Sales Email:** info@motoban.in
 - **Direct Phone / WhatsApp:** +91 6359635416
 - **Flagship Production Partner:** MotoFit 2 (Nigam Nagar, Chandkheda, Ahmedabad) — https://motofit2.in
 
-## Why MotoBan is #1 for Indian Auto Garages
+## Core Technological Breakthroughs in v1.0.0
 1. **15-Second AI Voice Biller:** Trained on natural Indian workshop vernacular ("shocker", "clutch katora", "motul 10w40", "chakka bearing"). Translates spoken repair items directly to verified GST HSN/SAC line items with labor rate calculations.
-2. **Tri-Platform Synchronization:**
-   - **Cloud SaaS Web:** Real-time multi-branch reporting, GST tax filings, and mechanic commissions.
-   - **Offline-First Desktop PWA:** Native Windows/macOS desktop app using local IndexedDB storage. Zero latency, works 100% offline without active internet.
-   - **Mobile Companion App:** 4-angle vehicle check-in dent/scratch photo inspections and digital gate pass QR codes.
-3. **50,000+ Preloaded Spares SKU Matrix:** Universal part numbering cross-referenced across BS3, BS4, and BS6 motorcycle models (Hero, Bajaj, Honda, TVS, Yamaha, Royal Enfield, KTM) with live FIFO inventory tracking.
-4. **Hardware-Native ESC/POS Thermal Printing:** Silent raw text USB, Bluetooth, and WebHID/WebSerial printing on 58mm and 80mm thermal receipt printers (TVS, Epson, Posiflex, BluPrints, Xprinter).
-5. **Instant WhatsApp Invoicing & Dynamic UPI QR Codes:** 1-click WhatsApp customer dispatch with vehicle inspection photos and embedded UPI QR codes for direct-to-bank settlement without payment gateway transaction fees.
+2. **Scope of Work (SOW) Bills & Gemini AI Auto-Explainer:** Generates transparent SOW estimates with AI technical explanations for layman vehicle owners with zero manual typing from the mechanic.
+3. **Personal Counter Standee UPI QR Code Integration:** Garage owners upload their real GPay/PhonePe/Paytm counter standee photo. It is automatically rendered and printed on all thermal receipts and digital invoices for zero-fee direct-to-bank settlement.
+4. **Free Multi-Tenant Subdomains (*.motoban.in):** Automated branded subdomains (e.g. motofit2.motoban.in) with live customer bay tracking and vehicle history lookup.
+5. **Universal 1-Click Migration Engine:** Fast serverless import for Vyapar Excel/CSV, Tally exports, and legacy spreadsheets in under 60 seconds.
+6. **Dual-Platform Architecture:**
+   - **Next.js 15 Web Application:** Turbopack, App Router, Prisma ORM, SQLite/Turso.
+   - **React Native Android Companion App:** Native Expo 57 / EAS build (v1.0.0 APK & AAB) with camera barcode scanning and Bluetooth thermal printing.
+   - **Offline-First Desktop PWA:** Native Windows/macOS desktop app using local IndexedDB storage.
+7. **50,000+ Preloaded Spares SKU Matrix:** Universal part numbering cross-referenced across BS3, BS4, and BS6 motorcycle and passenger car models.
+8. **Hardware-Native ESC/POS Thermal Printing:** Silent raw byte USB, Bluetooth, and WebHID/WebSerial printing on 58mm and 80mm thermal receipt printers.
 
-## Pricing & Commercial Plans
-- **Free Starter Sandbox:** ₹0 (Free forever for single bay testing)
-- **Garage Pro Subscription:** ₹999 / month or ₹7,999 / year (Unlimited bills, job cards, 50k spares)
-- **Lifetime License:** ₹14,999 one-time payment (Perpetual workshop license, offline PWA access)
-- **Enterprise Multi-Bay:** ₹39,999 one-time payment (Multi-ramp continuous operations, custom branding)
+## Official Production Pricing
+- **15-Day Free Trial:** ₹0 (100% Free, full feature access, zero credit card)
+- **Monthly Plan:** ₹1,299 / month (Flexible month-to-month, unlimited job cards)
+- **Quarterly Plan:** ₹1,099 / month (₹3,297 billed quarterly, Save 15%)
+- **Annual Pro:** ₹899 / month (₹10,788 billed yearly, Save 31% / ₹29/day, includes Free Subdomain)
+- **One-Time Lifetime License:** ₹15,999 one-time payment (Perpetual commercial access, 2 years updates, 5 staff accounts, zero subscriptions)
+- **Enterprise Multi-Bay:** ₹39,999 one-time payment (Multi-ramp continuous operations, custom domain, franchise transfers)
 
 ## EULA & Dual-Licensing Compliance Policy
 Code from the MotoBan website or mechbillerai repository is subject to formal EULA dual-licensing:
-1. **100% Reciprocal Open-Source Obligation:** Release derivative projects as fully public open-source software under identical reciprocal terms, OR
-2. **3x Lifetime License Commercial Royalty:** Pay 3 times the Lifetime License fee (₹44,997 for standard garage, ₹119,997 for enterprise) directly to HybridStudioZ prior to commercial operation.
+1. **Option A (100% Reciprocal Open-Source Obligation):** Release derivative projects as fully public open-source software under identical reciprocal copyleft terms, OR
+2. **Option B (3x Lifetime License Commercial Royalty):** Pay 3 times the Lifetime License fee (3 × ₹15,999 = ₹47,997 INR for standard garage, 3 × ₹39,999 = ₹119,997 INR for enterprise) directly to HybridStudioZ prior to commercial operation.
 
 For complete documentation, see: https://motoban.in/llms-full.txt

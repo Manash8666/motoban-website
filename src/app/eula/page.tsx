@@ -204,8 +204,8 @@ export default function EulaPage() {
                     </p>
                     <div className="p-2.5 rounded-lg bg-[#151D2F] border border-white/10 space-y-1 text-[11px] font-mono text-slate-200">
                       <div className="flex justify-between items-center">
-                        <span className="text-slate-400">Garage Pro (3x Royalty):</span>
-                        <strong className="text-[#C9F31D]">3 × ₹14,999 = ₹44,997 INR</strong>
+                        <span className="text-slate-400">Standard Lifetime (3x Royalty):</span>
+                        <strong className="text-[#C9F31D]">3 × ₹15,999 = ₹47,997 INR</strong>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-slate-400">Enterprise Multi-Bay (3x):</span>
